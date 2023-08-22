@@ -16,4 +16,5 @@ body {
   word-break: break-word;
   background: ${({ theme }) => theme.color.mainColor};
   font-family: 'Playfair Display', serif;
+  margin: 0;
 }`;
