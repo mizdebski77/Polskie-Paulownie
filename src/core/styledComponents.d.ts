@@ -5,9 +5,12 @@ declare module 'styled-components' {
         color: {
             mainColor: string;
             secondColor: string;
+            fontColor: string;
         }
         breakPoint: {
-
+            firstBreakPoint: number,
+            secondBreakPoint: number,
+            mobileMax: number
         };
     }
 }
