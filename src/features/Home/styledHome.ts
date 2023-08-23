@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 
 export const Title = styled.header`
     font-size: 48px;
+    margin-top: 40px;
     font-weight: 600 ;
     text-align: center;
     color: ${({ theme }) => theme.color.secondColor};
