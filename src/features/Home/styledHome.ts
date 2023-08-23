@@ -7,21 +7,9 @@ export const Wrapper = styled.div`
     padding: 10px;
 `;
 
-
-
-export const About = styled.section`
-
-    `;
-
-export const Services = styled.section`
-
-    `;
-
-export const Gallery = styled.section`
-
-    `;
-
-export const Contact = styled.section`
-
-    `;
-
+export const Title = styled.header`
+    font-size: 48px;
+    font-weight: 600 ;
+    text-align: center;
+    color: ${({ theme }) => theme.color.secondColor};
+`;
