@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import ex1 from '../../../common/Images/Example/ex2.jpg'
+import ex1 from '../../../common/Images/Example/ex1.jpg'
 import Slider from "react-slick";
 
 export const Wrapper = styled.section`
