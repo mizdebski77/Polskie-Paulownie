@@ -1,6 +1,8 @@
-import { ContactElement, ContactWrapper, FooterTitle,  Logo, LogoLink, SVGLink, SVGLinks, Socials, Wrapper } from './styledFooter';
+import { ContactElement, ContactWrapper, FooterTitle, Image, Logo, LogoLink, SVGLink, SVGLinks, Socials, Wrapper } from './styledFooter';
 import logo from '../Images/Logo-paulownie.png';
-
+import phone from '../Images/SVG/phone.svg';
+import mail from '../Images/SVG/mail.svg';
+import facebook from '../Images/SVG/facebook.svg';
 export const Footer = () => {
 
     const handleClick = () => {
@@ -14,18 +16,17 @@ export const Footer = () => {
             </LogoLink>
             <ContactWrapper>
                 <FooterTitle>Polskie Paulownie S.A:</FooterTitle>
-                <ContactElement>Adres: Legionów Polskich 34</ContactElement>
-                <ContactElement>Telefon: 501375604</ContactElement>
-                <ContactElement>Nip: 534645234</ContactElement>
+                <ContactElement>Adres: Jakaś tam</ContactElement>
+                <ContactElement>Telefon: 615236616</ContactElement>
+                <ContactElement>Nip: 81528153</ContactElement>
             </ContactWrapper>
 
             <Socials>
                 <FooterTitle> Skontaktuj się z nami:</FooterTitle>
                 <SVGLinks>
-                    {/* <SVGLink><Image src={insta} /></SVGLink>
-                    <SVGLink><Image src={website} /> </SVGLink>
+                    {/* <SVGLink><Image src={phone} /></SVGLink>
                     <SVGLink><Image src={mail} /></SVGLink>
-                    <SVGLink><Image src={fb} /></SVGLink> */}
+                    <SVGLink><Image src={facebook} /></SVGLink> */}
                 </SVGLinks>
             </Socials>
         </Wrapper>

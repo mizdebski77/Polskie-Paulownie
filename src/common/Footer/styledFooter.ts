@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { ReactSVG } from "react-svg";
 
 export const Wrapper = styled.footer`
     display: flex;
@@ -29,7 +30,7 @@ export const LogoLink = styled(Link)`
 `;
 
 export const Logo = styled.img`
-    width: 320px;
+    width: 280px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         width: 200px;
@@ -80,16 +81,18 @@ export const SVGLink = styled.a`
     transition: 1s;
     width: 32px;
     height: 32px;
+    fill: white;
+    transition: 0.3s;
     :hover{
-        transform: rotate3d(2, 0, 1, 360deg);
+        transform: scale(1.15);
         cursor: pointer;
     }
 
     :active{
-        transform: scale(1.15);
     }
 `;
 
-// export const Image = styled(SVG)`
-//     width: 32px;
-// `;
+export const Image = styled(ReactSVG)`
+    width: 48px;
+    height: 48px;
+`;
