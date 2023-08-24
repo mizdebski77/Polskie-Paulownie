@@ -5,6 +5,7 @@ import { Home } from "../features/Home/home";
 import { About } from "../features/About/about";
 import { Contact } from "../features/Contact/contact";
 import { Gallery } from "../features/Gallery/gallery";
+import { Cultivation } from "../features/Cultivation/cultivation";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/O-nas" element={<About />} />
         <Route path="/Kontakt" element={<Contact />} />
         <Route path="/Galeria" element={<Gallery />} />
+        <Route path="/Uprawa-paulowni" element={<Cultivation />} />
 
       </Routes>
       <Footer />
