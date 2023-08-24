@@ -4,6 +4,7 @@ import { Footer } from "../common/Footer/footer";
 import { Home } from "../features/Home/home";
 import { About } from "../features/About/about";
 import { Contact } from "../features/Contact/contact";
+import { Gallery } from "../features/Gallery/gallery";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/Strona-Główna" element={<Home />} />
         <Route path="/O-nas" element={<About />} />
         <Route path="/Kontakt" element={<Contact />} />
+        <Route path="/Galeria" element={<Gallery />} />
 
       </Routes>
       <Footer />
