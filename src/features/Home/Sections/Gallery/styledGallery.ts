@@ -9,6 +9,11 @@ export const Wrapper = styled.section`
     padding: 40px 0px;
     margin: 0 auto;
     gap: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        padding: 20px;
+        gap: 20px;
+    };
 `;
 
 export const ImagesWrapper = styled.div`
@@ -16,11 +21,20 @@ export const ImagesWrapper = styled.div`
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     animation: ${opacitySlide} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    };
 `;  
 
 export const GalleryImage = styled.img`
-    width: 400px;
-    height: 200px;
+    width: 100%;
 `;
 
 export const GalleryLink = styled(Link)`
@@ -47,5 +61,9 @@ export const Button = styled.button`
         transform: scale(1.02);
         cursor: pointer;
         box-shadow: 0px 0px 20px -2px ${({ theme }) => theme.color.secondColor};
-    }
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 16px;
+    };
 `;

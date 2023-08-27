@@ -10,6 +10,13 @@ export const Wrapper = styled.section`
     margin: 0 auto;
     gap: 40px;
     row-gap: 80px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        text-align: center;
+        padding: 12px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    };
 `;
 
 export const ServicesTextWrapper = styled.div`
@@ -22,6 +29,10 @@ export const ServicesTitle = styled.h2`
     text-align: center;
     margin: 0;
     animation: ${slideRight} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 28px;
+    };
 `;
 
 export const ServicesText = styled.h3`
@@ -30,6 +41,10 @@ export const ServicesText = styled.h3`
     font-weight: normal;
     line-height: 1.2; 
     animation: ${slideBottom} 1s;
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 20px;
+    };
 `;
 
 export const ServicesImage = styled.img`
@@ -37,4 +52,7 @@ export const ServicesImage = styled.img`
     margin: 0 auto;
     animation: ${slideLeft} 1s;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        max-width: 240px;
+    };
 `;

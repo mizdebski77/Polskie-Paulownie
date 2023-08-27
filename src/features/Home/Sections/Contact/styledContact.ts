@@ -7,6 +7,10 @@ export const Wrapper = styled.section`
     padding: 80px 0px;
     margin: 0 auto;
     width: 100%;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        padding: 20px 0;
+    };
 `;
 
 export const ContactWrapper = styled.div`
@@ -16,12 +20,24 @@ export const ContactWrapper = styled.div`
     justify-content: space-around;
     padding:  40px 12px;
     animation: ${slideBottom} 1s;
+    border-radius: 10px;
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        display: grid;
+        text-align: center;
+        gap: 12px;
+        padding: 20px 12px;
+    };
 `;
 
 export const ContactTitle = styled.span`
     font-size: 32px;
     color: ${({theme}) => theme.color.secondColor};
     font-weight: bold;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 24px;
+    };
 `;
 
 export const ContactItemWrapper = styled.div`
@@ -30,6 +46,10 @@ export const ContactItemWrapper = styled.div`
 
 export const Span = styled.span`
     font-size: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 32px;
+    };
 `;
 
 export const Title = styled.h4`
@@ -54,6 +74,10 @@ export const ContactButton = styled.button`
     text-decoration: none;
     font-weight: bold;
     transition: 0.5s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 16px;
+    };
 
     &:hover{
         transform: scale(1.04);

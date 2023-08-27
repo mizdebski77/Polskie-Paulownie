@@ -10,6 +10,14 @@ export const Wrapper = styled.section`
     margin: 0 auto;
     gap: 40px;
     row-gap: 80px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        grid-template-columns: 1fr;
+        padding: 12px;
+        gap: 20px;
+        margin-top: 40px;
+        text-align: center;
+    };
 `;
 
 export const AboutTextWrapper = styled.div`
@@ -22,6 +30,10 @@ export const AboutTitle = styled.h2`
     text-align: center;
     margin: 0;
     animation: ${slideLeft} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 28px;
+    };
 `;
 
 export const AboutText = styled.h3`
@@ -30,8 +42,15 @@ export const AboutText = styled.h3`
     font-weight: normal;
     line-height: 1.2; 
     animation: ${slideBottom} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 20px;
+    };
 `;
 
 export const AboutImage = styled.img`
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
     animation: ${slideRight} 1s;
 `;

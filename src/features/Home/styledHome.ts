@@ -15,4 +15,8 @@ export const Title = styled.header`
     text-align: center;
     color: ${({ theme }) => theme.color.secondColor};
     animation: ${slideBottom} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 32px;
+    };  
 `;

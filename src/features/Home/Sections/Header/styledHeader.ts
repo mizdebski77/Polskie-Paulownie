@@ -11,10 +11,19 @@ export const Wrapper = styled.section`
     gap: 40px;
     box-shadow: 0px 20px 48px -26px rgba(12, 106, 0, 0.30);
     animation: ${opacitySlide} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
 `;
 
 export const HeaderTitleWrapper = styled.div`
     display: grid;
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        gap: 12px;
+    }
 `;
 
 export const HeaderTitle = styled.h1`
@@ -22,6 +31,15 @@ export const HeaderTitle = styled.h1`
     text-align: center;
     color: #4D534D;
     animation: ${slideBottom} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        font-size: 44px;
+        margin: 10px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 36px;
+    };
 `;
 
 export const HeaderLink = styled(Link)`
@@ -29,6 +47,10 @@ export const HeaderLink = styled(Link)`
     margin: 0 auto;
     width: 100%;
     animation: ${buttonsAnimation} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        max-width: 160px;
+    }
 `;
 
 export const HeaderButton = styled.button`
@@ -43,6 +65,10 @@ export const HeaderButton = styled.button`
     text-decoration: none;
     font-weight: bold;
     transition: 0.5s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 16px;
+    }
 
     &:hover{
         transform: scale(1.04);
