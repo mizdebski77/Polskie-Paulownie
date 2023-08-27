@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import ex from '../../common/Images/Example/ex1.jpg';
+import { opacitySlide, slideBottom, slideLeft, slideRight } from "../../core/animations";
 
 export const Wrapper = styled.div`
     min-height: 100vh;
@@ -18,12 +19,14 @@ export const Header = styled.header`
     justify-content: center;
     align-items: center;
     box-shadow: 11px 13px 28px 0px rgba(0, 0, 0, 0.50);
+    animation: ${opacitySlide} 1s;
 `;
 
 export const HeaderTitle = styled.h1`
     position: absolute;
     font-size: 100px;
     color: white;
+    animation: ${slideBottom} 1s;
 `;
 
 export const Content = styled.section`
@@ -41,13 +44,15 @@ export const TextWrapper = styled.div`
 export const Title = styled.h2`
     text-align: center;
     font-size: 48px;
-    color: ${({theme}) => theme.color.secondColor};
+    color: ${({ theme }) => theme.color.secondColor};
     margin: 10px;
+    animation: ${slideRight} 1s;
 `;
 
 export const AboutText = styled.article`
     line-height: 1.2; 
     font-size: 24px;
+    animation: ${slideBottom} 1s;
 `;
 
 export const Image = styled.img`
@@ -56,5 +61,6 @@ export const Image = styled.img`
     border-radius: 50%;
     border: 6px solid #0F7701;
     box-shadow: 20px 20px 0px 0px #DDD;
+    animation: ${slideLeft} 1s;
 `;
 

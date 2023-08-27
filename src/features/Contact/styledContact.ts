@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { slideBottom, slideLeft, slideRight } from "../../core/animations";
 
 export const Wrapper = styled.section`
     max-width: 1720px;
@@ -16,6 +17,7 @@ export const Title = styled.h1`
     font-size: 64px;
     color: ${({theme}) => theme.color.secondColor};
     margin-bottom: 0px;
+    animation: ${slideBottom} 1s;
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 28px;
     };
@@ -26,6 +28,8 @@ export const Span = styled.h2`
     font-size: 48px;
     margin: 10px;
     font-weight: normal;
+    animation: ${slideBottom} 1s;
+
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 24px;
     };
@@ -49,6 +53,7 @@ export const Form = styled.form`
     padding: 64px 40px;
     box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    animation: ${slideLeft} 1s;
 `;
 
 
@@ -128,6 +133,7 @@ export const Button = styled.button`
 export const LinkContainer = styled.div`
     box-shadow: 0px 0px 22px -3px rgba(16, 136, 0, 0.50);
     border-radius: 10px;
+    animation: ${slideRight} 1s;
 `;
 
 export const LinksWrapper = styled.div`

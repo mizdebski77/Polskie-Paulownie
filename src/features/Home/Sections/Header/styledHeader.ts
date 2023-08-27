@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import ex1 from '../../../../common/Images/Example/ex1.jpg'
 import Slider from "react-slick";
+import { buttonsAnimation, opacitySlide, slideBottom, slideRight } from "../../../../core/animations";
 
 export const Wrapper = styled.section`
     display: grid;
@@ -9,6 +10,7 @@ export const Wrapper = styled.section`
     padding: 40px;
     gap: 40px;
     box-shadow: 0px 20px 48px -26px rgba(12, 106, 0, 0.30);
+    animation: ${opacitySlide} 1s;
 `;
 
 export const HeaderTitleWrapper = styled.div`
@@ -19,12 +21,14 @@ export const HeaderTitle = styled.h1`
     font-size: 54px;
     text-align: center;
     color: #4D534D;
+    animation: ${slideBottom} 1s;
 `;
 
 export const HeaderLink = styled(Link)`
     max-width: 200px;
     margin: 0 auto;
     width: 100%;
+    animation: ${buttonsAnimation} 1s;
 `;
 
 export const HeaderButton = styled.button`
@@ -53,9 +57,10 @@ export const HeaderPhotos = styled(Slider)`
 
 export const HeaderImage = styled.div`
     max-width: 860px ;
-   height: 400px;
-   box-shadow: 0px 0px 54px 64px #EFEFEF inset;
-   background-image: url("${ex1}") ;
-   background-size: cover;
-   background-position: center;
+    height: 400px;
+    box-shadow: 0px 0px 54px 64px #EFEFEF inset;
+    background-image: url("${ex1}") ;
+    background-size: cover;
+    background-position: center;
+    animation: ${slideRight} 1s;
 `;

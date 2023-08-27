@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
+import { buttonsAnimation, opacitySlide } from "../../../../core/animations";
 
 export const Wrapper = styled.section`
     display: grid;
@@ -14,6 +15,7 @@ export const ImagesWrapper = styled.div`
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+    animation: ${opacitySlide} 1s;
 `;  
 
 export const GalleryImage = styled.img`
@@ -25,6 +27,7 @@ export const GalleryLink = styled(Link)`
     max-width: 360px;
     margin: 0 auto;
     width: 100%;
+    animation: ${buttonsAnimation} 1s;
 `;
 
 export const Button = styled.button`

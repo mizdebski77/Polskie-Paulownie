@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { slideBottom, slideLeft, slideRight } from "../../../../core/animations";
 
 export const Wrapper = styled.section`
     display: grid;
@@ -20,6 +21,7 @@ export const ServicesTitle = styled.h2`
     color: ${({theme}) => theme.color.secondColor};
     text-align: center;
     margin: 0;
+    animation: ${slideRight} 1s;
 `;
 
 export const ServicesText = styled.h3`
@@ -27,9 +29,12 @@ export const ServicesText = styled.h3`
     margin: 10px;
     font-weight: normal;
     line-height: 1.2; 
+    animation: ${slideBottom} 1s;
 `;
 
 export const ServicesImage = styled.img`
     max-width: 320px;
     margin: 0 auto;
+    animation: ${slideLeft} 1s;
+
 `;

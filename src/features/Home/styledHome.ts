@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { slideBottom } from "../../core/animations";
 
 export const Wrapper = styled.div`
     min-height: 100vh;
@@ -13,4 +14,5 @@ export const Title = styled.header`
     font-weight: 600 ;
     text-align: center;
     color: ${({ theme }) => theme.color.secondColor};
+    animation: ${slideBottom} 1s;
 `;
