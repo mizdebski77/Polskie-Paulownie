@@ -1,9 +1,8 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 import { slideBottom, slideLeft, slideRight } from "../../../../core/animations";
 
 export const Wrapper = styled.section`
     display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     max-width: 1320px;
     padding: 80px 0px;
@@ -14,7 +13,6 @@ export const Wrapper = styled.section`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         grid-template-columns: 1fr;
         padding: 12px;
-        gap: 20px;
         margin-top: 40px;
         text-align: center;
     };
@@ -24,9 +22,23 @@ export const AboutTextWrapper = styled.div`
 
 `;
 
+export const ContentWrapper = styled.div <{ reverse?: boolean }>`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        display: flex;
+        flex-direction: column;
+
+        ${({ reverse }) => reverse && css`
+            flex-direction: column-reverse;
+        `};
+    };
+`;
+
 export const AboutTitle = styled.h2`
     font-size: 36px;
-    color: ${({theme}) => theme.color.secondColor};
+    color: ${({ theme }) => theme.color.secondColor};
     text-align: center;
     margin: 0;
     animation: ${slideLeft} 1s;

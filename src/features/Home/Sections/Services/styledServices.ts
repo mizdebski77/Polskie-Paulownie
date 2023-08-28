@@ -1,9 +1,8 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 import { slideBottom, slideLeft, slideRight } from "../../../../core/animations";
 
 export const Wrapper = styled.section`
     display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     max-width: 1320px;
     padding: 80px 0px;
@@ -21,6 +20,20 @@ export const Wrapper = styled.section`
 
 export const ServicesTextWrapper = styled.div`
 
+`;
+
+export const ContentWrapper = styled.div <{ reverse?: boolean }>`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        display: flex;
+        flex-direction: column;
+
+        ${({ reverse }) => reverse && css`
+            flex-direction: column-reverse;
+        `};
+    };
 `;
 
 export const ServicesTitle = styled.h2`
@@ -53,6 +66,6 @@ export const ServicesImage = styled.img`
     animation: ${slideLeft} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        max-width: 240px;
+        max-width: 200px;
     };
 `;

@@ -1,22 +1,25 @@
 import React from 'react';
-import { ServicesImage, ServicesText, ServicesTextWrapper, ServicesTitle, Wrapper } from './styledServices';
+import { ContentWrapper, ServicesImage, ServicesText, ServicesTextWrapper, ServicesTitle, Wrapper } from './styledServices';
 import ex from '../../../../common/Images/Example/tree.png';
 
 export const Services = () => {
     return (
         <Wrapper>
-            <ServicesImage src={ex} />
+            <ContentWrapper>
+                <ServicesImage src={ex} />
+                <ServicesTextWrapper>
+                    <ServicesTitle>Lorem Ipsum</ServicesTitle>
+                    <ServicesText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias perspiciatis ducimus aperiam ad libero nostrum, aliquam molestiae tempore reprehenderit id impedit, corporis assumenda! Libero optio iusto aspernatur vero pariatur.</ServicesText>
+                </ServicesTextWrapper>
+            </ContentWrapper>
 
-            <ServicesTextWrapper>
-                <ServicesTitle>Lorem Ipsum</ServicesTitle>
-                <ServicesText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias perspiciatis ducimus aperiam ad libero nostrum, aliquam molestiae tempore reprehenderit id impedit, corporis assumenda! Libero optio iusto aspernatur vero pariatur.</ServicesText>
-            </ServicesTextWrapper>
-
-            <ServicesImage src={ex} />
-            <ServicesTextWrapper>
-                <ServicesTitle>Lorem Ipsum</ServicesTitle>
-                <ServicesText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias perspiciatis ducimus aperiam ad libero nostrum, aliquam molestiae tempore reprehenderit id impedit, corporis assumenda! Libero optio iusto aspernatur vero pariatur.</ServicesText>
-            </ServicesTextWrapper>
+            <ContentWrapper reverse>
+                <ServicesTextWrapper>
+                    <ServicesTitle>Lorem Ipsum</ServicesTitle>
+                    <ServicesText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias perspiciatis ducimus aperiam ad libero nostrum, aliquam molestiae tempore reprehenderit id impedit, corporis assumenda! Libero optio iusto aspernatur vero pariatur.</ServicesText>
+                </ServicesTextWrapper>
+                <ServicesImage src={ex} />
+            </ContentWrapper>
         </Wrapper>
     );
 };
