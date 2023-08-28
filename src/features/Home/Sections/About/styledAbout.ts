@@ -25,6 +25,7 @@ export const AboutTextWrapper = styled.div`
 export const ContentWrapper = styled.div <{ reverse?: boolean }>`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display: flex;
