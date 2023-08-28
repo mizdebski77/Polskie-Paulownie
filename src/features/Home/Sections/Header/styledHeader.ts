@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import ex1 from '../../../../common/Images/Example/ex1.jpg'
-import Slider from "react-slick";
 import { buttonsAnimation, opacitySlide, slideBottom, slideRight } from "../../../../core/animations";
+import Slider from "react-slick";
 
 export const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     padding: 40px;
     gap: 40px;
     box-shadow: 0px 20px 48px -26px rgba(12, 106, 0, 0.30);
@@ -19,18 +19,22 @@ export const Wrapper = styled.section`
 `;
 
 export const HeaderTitleWrapper = styled.div`
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         gap: 12px;
     }
 `;
 
+
 export const HeaderTitle = styled.h1`
     font-size: 54px;
     text-align: center;
     color: #4D534D;
     animation: ${slideBottom} 1s;
+    margin: 12px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         font-size: 44px;
@@ -77,16 +81,12 @@ export const HeaderButton = styled.button`
     }
 `;
 
-export const HeaderPhotos = styled(Slider)`
-
+export const CustomSlider = styled(Slider)`
+    max-width: 800px;
+    width: 100%;
 `;
 
-export const HeaderImage = styled.div`
-    max-width: 860px ;
-    height: 400px;
-    box-shadow: 0px 0px 54px 64px #EFEFEF inset;
-    background-image: url("${ex1}") ;
-    background-size: cover;
-    background-position: center;
+export const HeaderImage = styled.img`
+
     animation: ${slideRight} 1s;
 `;
