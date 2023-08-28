@@ -18,8 +18,12 @@ export const Wrapper = styled.section`
     };
 `;
 
-export const AboutTextWrapper = styled.div`
+export const AboutTextWrapper = styled.div <{ reverse?: boolean }>`
+    animation: ${slideLeft} 1s;
 
+    ${({ reverse }) => reverse && css`
+        animation: ${slideRight} 1s;
+    `};
 `;
 
 export const ContentWrapper = styled.div <{ reverse?: boolean }>`
@@ -42,7 +46,6 @@ export const AboutTitle = styled.h2`
     color: ${({ theme }) => theme.color.secondColor};
     text-align: center;
     margin: 0;
-    animation: ${slideLeft} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 28px;
@@ -54,16 +57,19 @@ export const AboutText = styled.h3`
     margin: 10px;
     font-weight: normal;
     line-height: 1.2; 
-    animation: ${slideBottom} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 20px;
     };
 `;
 
-export const AboutImage = styled.img`
+export const AboutImage = styled.img<{ reverse?: boolean }>`
     max-width: 500px;
     margin: 0 auto;
     width: 100%;
     animation: ${slideRight} 1s;
+
+    ${({ reverse }) => reverse && css`
+        animation: ${slideLeft} 1s;
+    `};
 `;
