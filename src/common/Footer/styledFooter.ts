@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { ReactSVG } from "react-svg";
 
 export const Wrapper = styled.footer`
     display: flex;
@@ -71,6 +70,7 @@ export const SVGLinks = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 20px;
+    padding: 0 20px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         margin: 0;
@@ -83,8 +83,9 @@ export const SVGLink = styled.a`
     height: 32px;
     fill: white;
     transition: 0.3s;
-    :hover{
-        transform: scale(1.15);
+
+    &:hover{
+        transform: scale(1.1);
         cursor: pointer;
     }
 
@@ -92,7 +93,7 @@ export const SVGLink = styled.a`
     }
 `;
 
-export const Image = styled(ReactSVG)`
+export const Image = styled.img`
     width: 48px;
     height: 48px;
 `;

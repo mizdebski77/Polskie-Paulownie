@@ -1,8 +1,8 @@
 import { ContactElement, ContactWrapper, FooterTitle, Image, Logo, LogoLink, SVGLink, SVGLinks, Socials, Wrapper } from './styledFooter';
 import logo from '../Images/Logo-paulownie.png';
-import phone from '../Images/SVG/phone.svg';
-import mail from '../Images/SVG/mail.svg';
-import facebook from '../Images/SVG/facebook.svg';
+import phone from '../Images/WhiteSVG/phone.svg';
+import mail from '../Images/WhiteSVG/mail.svg';
+import facebook from '../Images/WhiteSVG/facebook.svg';
 export const Footer = () => {
 
     const handleClick = () => {
@@ -24,9 +24,9 @@ export const Footer = () => {
             <Socials>
                 <FooterTitle> Skontaktuj się z nami:</FooterTitle>
                 <SVGLinks>
-                    {/* <SVGLink><Image src={phone} /></SVGLink>
+                    <SVGLink><Image src={phone} /></SVGLink>
                     <SVGLink><Image src={mail} /></SVGLink>
-                    <SVGLink><Image src={facebook} /></SVGLink> */}
+                    <SVGLink><Image src={facebook} /></SVGLink>
                 </SVGLinks>
             </Socials>
         </Wrapper>
