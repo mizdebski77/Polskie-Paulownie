@@ -1,5 +1,5 @@
 import { css, styled } from "styled-components";
-import ex from '../../common/Images/Example/ex1.jpg';
+import ex from '../../common/Images/Example/header1.jpg';
 import { opacitySlide, slideBottom, slideLeft, slideRight } from "../../core/animations";
 
 export const Wrapper = styled.div`

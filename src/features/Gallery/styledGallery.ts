@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import ex from '../../common/Images/Example/ex2.jpg';
+import ex from '../../common/Images/Example/header1.jpg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import { opacitySlide, slideBottom } from "../../core/animations";
