@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 
 export const Header = styled.header`
     width: 100%;
-    height: 400px;
+    height: 240px;
     background-image: url("${ex}");
     background-size: cover;
     background-position: center;
@@ -56,8 +56,8 @@ export const AboutText = styled.article`
 `;
 
 export const Image = styled.img`
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     border: 6px solid #0F7701;
     box-shadow: 20px 20px 0px 0px #DDD;

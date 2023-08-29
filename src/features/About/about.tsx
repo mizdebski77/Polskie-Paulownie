@@ -1,6 +1,6 @@
 import React from 'react';
 import { AboutText, Content, Header, HeaderTitle, Image, TextWrapper, Title, Wrapper } from './styledAbout';
-import ex from '../../common/Images/Example/ex2.jpg';
+import ex from '../../common/Images/Example/header1.jpg';
 
 export const About = () => {
     return (

@@ -25,19 +25,45 @@ export const ContactWrapper = styled.div`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display: grid;
         text-align: center;
-        gap: 12px;
+        gap: 20px;
         padding: 20px 12px;
     };
 `;
 
 export const ContactTitle = styled.span`
     font-size: 32px;
-    color: ${({theme}) => theme.color.secondColor};
+    color: ${({ theme }) => theme.color.secondColor};
     font-weight: bold;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 24px;
     };
+`;
+
+export const ContactSvgWrapper = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+    cursor: pointer;
+`;
+
+export const SVGIcon = styled.img`
+    max-width: 50px;
+    width: 100%;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        max-width: 40px;
+    };
+`;
+
+export const SVGLink = styled.a`
+
 `;
 
 export const ContactItemWrapper = styled.div`
@@ -85,3 +111,4 @@ export const ContactButton = styled.button`
         box-shadow: 0px 0px 23px -2px ${({ theme }) => theme.color.secondColor};
     }
 `;
+

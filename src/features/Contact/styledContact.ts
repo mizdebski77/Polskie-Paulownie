@@ -130,10 +130,29 @@ export const Button = styled.button`
     }
 `;
 
+export const Link = styled.a`
+    color: ${({theme}) => theme.color.secondColor};
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+`;
+
+export const SVGIcon = styled.img`
+    max-width: 50px;
+    width: 100%;
+    transition: 0.3s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        max-width: 40px;
+    };
+`;
+
+
 export const LinkContainer = styled.div`
     box-shadow: 0px 0px 22px -3px rgba(16, 136, 0, 0.50);
     border-radius: 10px;
     animation: ${slideRight} 1s;
+    padding-bottom: 20px;
 `;
 
 export const LinksWrapper = styled.div`
@@ -152,7 +171,7 @@ export const LinksTitle = styled.h4`
     font-size: 36px;
     font-weight: 600;
     color: ${({theme}) => theme.color.secondColor};
-
+    margin-top: 20px;
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 28px;
     };

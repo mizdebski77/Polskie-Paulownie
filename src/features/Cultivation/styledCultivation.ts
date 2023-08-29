@@ -1,5 +1,6 @@
 import { css, styled } from "styled-components";
 import ex from '../../common/Images/Example/ex1.jpg';
+import { opacitySlide, slideBottom, slideLeft, slideRight } from "../../core/animations";
 
 export const Wrapper = styled.div`
     min-height: 100vh;
@@ -10,7 +11,7 @@ export const Wrapper = styled.div`
 
 export const Header = styled.header`
     width: 100%;
-    height: 400px;
+    height: 240px;
     background-image: url("${ex}");
     background-size: cover;
     background-position: center;
@@ -18,12 +19,14 @@ export const Header = styled.header`
     justify-content: center;
     align-items: center;
     box-shadow: 11px 13px 28px 0px rgba(0, 0, 0, 0.50);
+    animation: ${opacitySlide} 1s;
 `;
 
 export const HeaderTitle = styled.h1`
     position: absolute;
     font-size: 100px;
     color: white;
+    animation: ${slideBottom} 1s;
 `;
 
 export const Content = styled.div`
@@ -40,12 +43,14 @@ export const TextWrapper = styled.div`
 
 export const MainText = styled.article`
     font-size: 32px;
+    animation: ${slideLeft} 1s;
 `;
 
 export const Span = styled.span`
     font-size: 28px;
     color: ${({ theme }) => theme.color.secondColor};
     font-weight: bold;
+    animation: ${slideRight} 1s;
 `;
 
 export const TileWrapper = styled.div`
@@ -63,9 +68,11 @@ export const Tile = styled.div <{left?: boolean}>`
     border: 2px solid ${({theme}) => theme.color.secondColor};
     padding: 20px;
     border-radius: 10px;
+    animation: ${slideLeft} 1s;
 
     ${({left}) => left && css`
         grid-template-columns: 1fr 2fr;
+        animation: ${slideRight} 1s;
     `};
 `;
 

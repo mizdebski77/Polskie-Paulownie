@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import ex from '../../common/Images/Example/ex2.jpg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
+import { opacitySlide, slideBottom } from "../../core/animations";
 
 export const Wrapper = styled.div`
     min-height: 100vh;
@@ -12,7 +13,7 @@ export const Wrapper = styled.div`
 
 export const Header = styled.header`
     width: 100%;
-    height: 400px;
+    height: 240px;
     background-image: url("${ex}");
     background-size: cover;
     background-position: center;
@@ -20,12 +21,14 @@ export const Header = styled.header`
     justify-content: center;
     align-items: center;
     box-shadow: 11px 13px 28px 0px rgba(0, 0, 0, 0.50);
+    animation: ${opacitySlide} 1s;
 `;
 
 export const HeaderTitle = styled.h1`
     position: absolute;
     font-size: 100px;
     color: white;
+    animation: ${slideBottom} 1s;
 `;
 
 export const GalleryWrapper = styled.div`
@@ -33,6 +36,7 @@ export const GalleryWrapper = styled.div`
     max-width: 1500px;
     margin: 0 auto;
     padding: 40px;
+    animation: ${opacitySlide} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
       column-count: 2;
@@ -41,21 +45,25 @@ export const GalleryWrapper = styled.div`
 `;
 
 export const Pics = styled.div`
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 0 0 10px rgb(148, 152, 158);
   overflow: hidden;
-`;
+  `;
 
 export const Image = styled.img`
-    width: 100%;
-    cursor: pointer;
-    transition: 0.3s linear;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s linear;
+  transition-timing-function:ease-in-out;
+  transform: scale(1.04);
 
-    :hover {
-        transform: scale(1.04);
-
-      @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        transform: none;
-      };
-    }
+  &:hover {
+    zoom: normal;
+    transform: scale(1.1);
+    opacity: 70%;
+  }
+    
 `;
 
 export const FullScreenWrapper = styled.section <{ fullScreenPhoto: boolean }>`
