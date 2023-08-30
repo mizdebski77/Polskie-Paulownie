@@ -3,13 +3,18 @@ import ex1 from '../../common/Images/Example/ex1.jpg';
 import ex2 from '../../common/Images/Example/ex2.jpg';
 import ex3 from '../../common/Images/Example/ex3.jpg';
 import { CloseButton, CustomSlide, CustomSwiper, FullScreenImage, FullScreenWrapper, GalleryWrapper, Image, Header, Pics, Wrapper, HeaderTitle } from './styledGallery';
-import { AiOutlineClose } from 'react-icons/ai'
 import { Navigation } from 'swiper/modules'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { AiOutlineClose } from 'react-icons/ai'
+import { motion } from 'framer-motion';
+import { closeImage, closeWrapper, openImage, openWrapper } from '../../core/animations';
 
 export const Gallery = () => {
 
-    const [fullScreenPhoto, setFullScreenPhoto] = useState(false);
-    const [fullScreenPhotoSrc, setFullScreenPhotoSrc] = useState("");
+    const [fullScreen, setFullScreen] = useState<boolean>(false);
+    const [fullScreenSrc, setFullScreenSrc] = useState<string>("");
+
 
     const data = [
         { id: 1, imgsrc: ex1 },
@@ -34,14 +39,15 @@ export const Gallery = () => {
     ];
 
     const openFullScreen = (src: string) => {
-        setFullScreenPhotoSrc(src);
-        setFullScreenPhoto(true);
+        setFullScreenSrc(src);
+        setFullScreen(true);
     };
 
     const closeFullScreen = () => {
-        setFullScreenPhoto(false);
-        setFullScreenPhotoSrc("");
+        setFullScreen(false);
+        setFullScreenSrc("");
     };
+
     return (
         <>
             <Wrapper>
@@ -57,10 +63,14 @@ export const Gallery = () => {
                 </GalleryWrapper>
             </Wrapper>
 
-
-            <FullScreenWrapper fullScreenPhoto={fullScreenPhoto}>
-                <FullScreenImage src={fullScreenPhotoSrc} />
-            {/* <CustomSwiper<React.ComponentType<any>>
+            {fullScreenSrc && (
+                <FullScreenWrapper
+                    as={motion.div}
+                    initial={closeWrapper}
+                    animate={fullScreen ? openWrapper : closeWrapper}
+                    transition={{ duration: 0.5 }}
+                >
+                    <CustomSwiper<React.ComponentType<any>>
                         centeredSlides={true}
                         slidesPerView={1}
                         modules={[Navigation]}
@@ -69,23 +79,25 @@ export const Gallery = () => {
                         navigation
                         grabCursor={true}
                         initialSlide={data.findIndex((img) => img.imgsrc === fullScreenSrc)}
+
                     >
                         {data.map((img) => (
                             <CustomSlide key={img.id}>
                                 <FullScreenImage
+                                    src={img.imgsrc}
+                                    as={motion.img}
                                     initial={closeImage}
                                     animate={fullScreen ? openImage : closeImage}
                                     transition={{ duration: 0.5 }}
-                                    src={img.imgsrc}
                                 />
-                            </CustomSlide>
-                        ))}
-                    </CustomSwiper> */}
-            <CloseButton
-                onClick={() => closeFullScreen()}>
-                <AiOutlineClose size={35} />
-            </CloseButton>
-        </FullScreenWrapper >
+                            </CustomSlide>))}
+
+                    </CustomSwiper>
+                    <CloseButton
+                        onClick={() => closeFullScreen()}>
+                        <AiOutlineClose size={35} />
+                    </CloseButton>
+                </FullScreenWrapper>)}
         </>
 
     );
