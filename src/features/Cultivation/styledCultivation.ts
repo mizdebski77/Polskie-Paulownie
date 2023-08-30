@@ -20,6 +20,10 @@ export const Header = styled.header`
     align-items: center;
     box-shadow: 11px 13px 28px 0px rgba(0, 0, 0, 0.50);
     animation: ${opacitySlide} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        height: 160px;
+    };
 `;
 
 export const HeaderTitle = styled.h1`
@@ -27,23 +31,38 @@ export const HeaderTitle = styled.h1`
     font-size: 100px;
     color: white;
     animation: ${slideBottom} 1s;
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 44px;
+    };
 `;
 
 export const Content = styled.div`
     max-width: 1200px;
     margin: 64px auto;
-`;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        margin: 32px auto;
+    };
+`;
 
 export const TextWrapper = styled.div`
     text-align: center;
     display: grid;
     gap: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        gap: 20px;
+    };
 `;
 
 export const MainText = styled.article`
     font-size: 32px;
     animation: ${slideLeft} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 24px;
+    };
 `;
 
 export const Span = styled.span`
@@ -51,29 +70,48 @@ export const Span = styled.span`
     color: ${({ theme }) => theme.color.secondColor};
     font-weight: bold;
     animation: ${slideRight} 1s;
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 20px;
+    };
 `;
 
 export const TileWrapper = styled.div`
     margin-top: 80px;
     display: grid;
     gap: 88px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        margin-top: 32px;
+        gap: 40px;
+    };
 `;
 
-export const Tile = styled.div <{left?: boolean}>`
+export const Tile = styled.div <{ left?: boolean }>`
     display: grid; 
     grid-template-columns: 2fr 1fr;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 13px 10px -10px rgba(0, 0, 0, 0.25);
-    border: 2px solid ${({theme}) => theme.color.secondColor};
+    border: 2px solid ${({ theme }) => theme.color.secondColor};
     padding: 20px;
     border-radius: 10px;
     animation: ${slideLeft} 1s;
 
-    ${({left}) => left && css`
+    ${({ left }) => left && css`
         grid-template-columns: 1fr 2fr;
         animation: ${slideRight} 1s;
+
+        @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        grid-template-columns:1fr;
+    };
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        grid-template-columns:1fr;
+        padding:12px;
+        gap:20px;
+    };
 `;
 
 export const TileTextWrapper = styled.div`
@@ -84,13 +122,26 @@ export const TileTitle = styled.h2`
     font-size: 32px;
     color: ${({ theme }) => theme.color.secondColor};
     text-align: center;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 28px;
+        margin: 10px;
+    };
 `;
 
 export const TileText = styled.article`
     font-size: 24px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 20px;
+    };
 `;
 
 export const Image = styled.img`
     width: 240px;
     margin: 0 auto;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        width: 120px;
+    };
 `;

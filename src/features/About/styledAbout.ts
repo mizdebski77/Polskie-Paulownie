@@ -24,7 +24,6 @@ export const Header = styled.header`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         height: 120px;
     };
-
 `;
 
 export const HeaderTitle = styled.h1`
@@ -36,7 +35,6 @@ export const HeaderTitle = styled.h1`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 64px;
     };
-
 `;
 
 export const Content = styled.section`
