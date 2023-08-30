@@ -7,12 +7,12 @@ export const Wrapper = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 40px;
     gap: 40px;
+    padding: 40px;
     box-shadow: 0px 20px 48px -26px rgba(12, 106, 0, 0.30);
     animation: ${opacitySlide} 1s;
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
         grid-template-columns: 1fr;
         padding: 12px;
     }
@@ -84,9 +84,16 @@ export const HeaderButton = styled.button`
 export const CustomSlider = styled(Slider)`
     max-width: 800px;
     width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        max-width: 500px;
+    };
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        max-width: 320px;
+    };
 `;
 
 export const HeaderImage = styled.img`
-
     animation: ${slideRight} 1s;
 `;
