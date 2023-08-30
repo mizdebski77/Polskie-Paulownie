@@ -121,6 +121,7 @@ export const FullScreenImage = styled(motion.img)`
 export const CustomSwiper = styled(Swiper) <{ fullScreenPhoto: boolean }>`
     width: 100%;
     height: 100%;
+    max-width: 1920px;
 `;
 
 export const CustomSlide = styled(SwiperSlide)`
