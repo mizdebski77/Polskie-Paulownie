@@ -24,6 +24,11 @@ export const Header = styled.header`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         height: 120px;
     };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
+    
 `;
 
 export const HeaderTitle = styled.h1`
@@ -70,6 +75,10 @@ export const Title = styled.h2`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 28px;
     };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
 `;
 
 export const AboutText = styled.article`
@@ -94,6 +103,10 @@ export const Image = styled.img`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         max-width: 20px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
     };
 `;
 

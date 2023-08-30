@@ -32,7 +32,7 @@ export const Logo = styled.img`
     width: 280px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        width: 200px;
+        width: 140px;
     };
 `;
 

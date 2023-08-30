@@ -44,6 +44,10 @@ export const ServicesTitle = styled.h2`
     margin: 0;
     animation: ${slideRight} 1s;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
+
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 28px;
     };
@@ -65,6 +69,10 @@ export const ServicesImage = styled.img`
     max-width: 320px;
     margin: 0 auto;
     animation: ${slideLeft} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         max-width: 200px;

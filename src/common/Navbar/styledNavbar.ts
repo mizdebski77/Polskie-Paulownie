@@ -27,15 +27,20 @@ export const LogoLink = styled(Link)`
     align-items: center;
     font-size: 28px;
     text-decoration: none;
-    color: ${({theme}) => theme.color.fontColor};
+    color: ${({ theme }) => theme.color.fontColor};
     gap: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 20px;
+        gap: 10px;
+    };
 `;
 
 export const Logo = styled.img`
     width: 68px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        width: 160px;
+        width: 54px;
     };
 `;
 
@@ -67,16 +72,17 @@ export const Links = styled(NavLink)`
     padding: 10px 12px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 16px;
-        padding: 16px;
-        width: 50%;
+        font-size: 20px;
+        padding: 12px;
+        width: 70%;
         margin: 0 auto;
         border-radius: 0;
+        color: ${({ theme }) => theme.color.mainColor};
     };
 
     &:hover {
         transform: translateY(-5px);
-        color: ${({theme}) => theme.color.secondColor};
+        color: ${({ theme }) => theme.color.secondColor};
 
         @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
             transform: none;
@@ -87,6 +93,11 @@ export const Links = styled(NavLink)`
     &.${activeClassName} {
         color: ${({ theme }) => theme.color.secondColor};
         text-decoration: underline;
+
+        @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        color: white;
+        };
+
 
         &:hover {
             transform: none;
@@ -107,11 +118,12 @@ export const PhoneNavbar = styled.div`
 
 
 export const PhoneNavbarWrapper = styled.div`
-    background: ${({ theme }) => theme.color.mainColor};
+    background: rgba(15, 119, 1, 0.97);
     border-bottom: 1px solid ${({ theme }) => theme.color.secondColor};
     position: fixed;
     width: 100%;
     z-index: 99;
+    padding: 0 0 20px 0;
 `;
 
 export const PhoneLinksWrapper = styled.div`

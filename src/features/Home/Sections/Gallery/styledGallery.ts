@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import { buttonsAnimation, opacitySlide } from "../../../../core/animations";
+import { buttonsAnimation, opacitySlide, slideBottom } from "../../../../core/animations";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Wrapper = styled.section`

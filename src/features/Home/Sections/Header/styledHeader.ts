@@ -54,7 +54,8 @@ export const HeaderLink = styled(Link)`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         max-width: 160px;
-    }
+    };
+
 `;
 
 export const HeaderButton = styled.button`
@@ -96,4 +97,8 @@ export const CustomSlider = styled(Slider)`
 
 export const HeaderImage = styled.img`
     animation: ${slideRight} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
 `;

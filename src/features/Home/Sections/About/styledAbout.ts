@@ -23,7 +23,15 @@ export const AboutTextWrapper = styled.div <{ reverse?: boolean }>`
 
     ${({ reverse }) => reverse && css`
         animation: ${slideRight} 1s;
+        
+        @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+            animation: ${slideBottom} 1s;
+        };
     `};
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
 `;
 
 export const ContentWrapper = styled.div <{ reverse?: boolean }>`
@@ -68,8 +76,16 @@ export const AboutImage = styled.img<{ reverse?: boolean }>`
     margin: 0 auto;
     width: 100%;
     animation: ${slideRight} 1s;
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
 
     ${({ reverse }) => reverse && css`
         animation: ${slideLeft} 1s;
+
+        @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
     `};
 `;

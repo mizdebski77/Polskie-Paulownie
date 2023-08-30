@@ -59,6 +59,10 @@ export const Form = styled.form`
     border-radius: 10px;
     animation: ${slideLeft} 1s;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
+
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         padding: 20px;
     };
@@ -182,6 +186,10 @@ export const LinkContainer = styled.div`
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
 `;
 
 export const LinksWrapper = styled.div`

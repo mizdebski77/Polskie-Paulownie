@@ -67,6 +67,10 @@ export const MainText = styled.article`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 24px;
     };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
+    };
 `;
 
 export const Span = styled.span`
@@ -77,6 +81,10 @@ export const Span = styled.span`
     
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 20px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
     };
 `;
 
@@ -108,6 +116,10 @@ export const Tile = styled.div <{ left?: boolean }>`
 
         @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         grid-template-columns:1fr;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        animation: ${slideBottom} 1s;
     };
     `};
 
