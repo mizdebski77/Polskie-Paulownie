@@ -21,6 +21,10 @@ export const Header = styled.header`
     align-items: center;
     box-shadow: 11px 13px 28px 0px rgba(0, 0, 0, 0.50);
     animation: ${opacitySlide} 1s;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        height: 160px;
+    };
 `;
 
 export const HeaderTitle = styled.h1`
@@ -28,6 +32,14 @@ export const HeaderTitle = styled.h1`
     font-size: 100px;
     color: white;
     animation: ${slideBottom} 1s;
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        font-size: 80px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 44px;
+    };
 `;
 
 export const GalleryWrapper = styled.div`
@@ -37,10 +49,14 @@ export const GalleryWrapper = styled.div`
     padding: 40px;
     animation: ${opacitySlide} 1s;
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
       column-count: 2;
-      padding: 20px;
-  };
+      padding: 12px;
+    };
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+      column-count: 1;
+    };
 `;
 
 export const Pics = styled.div`
@@ -48,6 +64,10 @@ export const Pics = styled.div`
   border: 1px solid white;
   box-shadow: 0 0 10px rgb(148, 152, 158);
   overflow: hidden;
+
+  @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    margin-top: 20px;
+  };
   `;
 
 export const Image = styled.img`

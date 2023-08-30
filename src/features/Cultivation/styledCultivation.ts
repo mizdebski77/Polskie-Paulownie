@@ -32,6 +32,10 @@ export const HeaderTitle = styled.h1`
     color: white;
     animation: ${slideBottom} 1s;
     
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        font-size: 80px;
+    };
+
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 44px;
     };
