@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import { buttonsAnimation, opacitySlide } from "../../../../core/animations";
-import { motion } from "framer-motion";
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Wrapper = styled.section`
     display: grid;
@@ -37,6 +36,13 @@ export const ImagesWrapper = styled.div`
 
 export const GalleryImage = styled.img`
     width: 100%;
+    transition: 0.3s linear;
+
+    &:hover {
+        transform: scale(1.04);
+        cursor: pointer;
+        opacity: 70%;
+    }
 `;
 
 export const GalleryLink = styled(Link)`
@@ -44,6 +50,10 @@ export const GalleryLink = styled(Link)`
     margin: 0 auto;
     width: 100%;
     animation: ${buttonsAnimation} 1s;
+`;
+
+export const Pics = styled.div`
+  overflow: hidden;
 `;
 
 export const Button = styled.button`
@@ -69,26 +79,52 @@ export const Button = styled.button`
         font-size: 16px;
     };
 `;
-export const FullScreenWrapper = styled(motion.section) <{ fullScreenPhoto: boolean }>`
-    display: ${({ fullScreenPhoto }) => (fullScreenPhoto ? 'block' : 'none')};
+
+
+export const FullScreenWrapper = styled.div`
+    display: block;
     position: fixed;
     z-index: 10;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.95);
     padding: 40px;
+`;
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        padding: 12px;
+export const CustomSwiper = styled(Swiper)`
+    width: 100%;
+    height: 100%;
+
+    .swiper-button-prev {
+        color: ${({ theme }) => theme.color.secondColor};
     };
+
+    .swiper-button-next {
+        color: ${({ theme }) => theme.color.secondColor};
+    };
+`;
+
+export const CustomSlide = styled(SwiperSlide)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+`;
+
+export const FullScreenImage = styled.img`
+    max-height: 100%;
+    max-width: 100%;
+    user-select: none;
 `;
 
 export const CloseButton = styled.button`
   position: fixed;
   z-index: 1;
   top: 20px;
-  color: white;
+  color: ${({ theme }) => theme.color.mainColor};
   transition: 0.3s;
   cursor: pointer;
   right: 80px;
@@ -98,7 +134,7 @@ export const CloseButton = styled.button`
   @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
     right: 10px;
   };
-  :hover {
+  &:hover {
     transform: scale(1.2);
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
@@ -106,35 +142,3 @@ export const CloseButton = styled.button`
       };
   }
 `;
-
-export const CursomSlider = styled(Slider)`
-    width: 100%;
-    height: 100%;
-`;
-
-export const ImageWrapper = styled(motion.div)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-`;
-
-export const FullScreenImage = styled(motion.img)`
-    max-height: 100%;
-    max-width: 100%;
-    user-select: none;
-`;
-
-export const FullScreenImgWrapper = styled.section`
-    width: 100%;
-    height: 100%;
-`;
-
-// export const CustomSlide = styled(SwiperSlide)`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: calc(100% - 40px);
-//   height: calc(100% - 40px);
-// `;
