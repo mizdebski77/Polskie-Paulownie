@@ -3,6 +3,8 @@ import { Links, LinksWrapper, Logo, LogoLink, PhoneLinksWrapper, PhoneNavbar, Ph
 import { Divide as Hamburger } from 'hamburger-react';
 import { links } from './Links';
 import logo from '../Images/Navabr.png';
+import { AnimatePresence, motion } from 'framer-motion';
+import { MobileLinksWrapperAnimation, MobileNavAnimation } from '../../core/animations';
 
 export const Navbar = () => {
     const [phoneNavbar, setPhoneNavbar] = useState<boolean>(false);
@@ -16,7 +18,7 @@ export const Navbar = () => {
     };
 
     const onLinkClick = () => {
-        togglePhoneNavbar(); 
+        togglePhoneNavbar();
         window.scrollTo(0, 0);
     };
 
@@ -38,24 +40,37 @@ export const Navbar = () => {
                 </PhoneNavbar>
             </Wrapper>
 
-            {phoneNavbar && (
-                <PhoneNavbarWrapper>
-                    <PhoneLinksWrapper>
-                        {links.map((link, index) => (
-                            <Links
-                                key={index}
-                                to={link.link}
-                                onClick={() => {
-                                    onLinkClick();
-                                    closePhoneNavbar(); 
-                                }}
-                            >
-                                {link.text}
-                            </Links>
-                        ))}
-                    </PhoneLinksWrapper>
-                </PhoneNavbarWrapper>
-            )}
+            <AnimatePresence>
+                {phoneNavbar && (
+                    <PhoneNavbarWrapper as={motion.div}
+                        initial="hidden"
+                        animate={phoneNavbar ? "visible" : "hidden"}
+                        exit="hidden"
+                        variants={MobileNavAnimation}
+                    >
+                        <PhoneLinksWrapper
+                            as={motion.div}
+                            initial="hidden"
+                            animate="visible"
+                            exit="hidden"
+                            variants={MobileLinksWrapperAnimation}
+                        >
+                            {links.map((link, index) => (
+                                <Links
+                                    key={index}
+                                    to={link.link}
+                                    onClick={() => {
+                                        onLinkClick();
+                                        closePhoneNavbar();
+                                    }}
+                                >
+                                    {link.text}
+                                </Links>
+                            ))}
+                        </PhoneLinksWrapper>
+                    </PhoneNavbarWrapper>
+                )}
+            </AnimatePresence>
         </>
     );
 };

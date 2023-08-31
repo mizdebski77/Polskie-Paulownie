@@ -124,6 +124,10 @@ export const PhoneNavbarWrapper = styled.div`
     width: 100%;
     z-index: 99;
     padding: 0 0 20px 0;
+
+    @media (min-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        display: none;
+    };
 `;
 
 export const PhoneLinksWrapper = styled.div`
