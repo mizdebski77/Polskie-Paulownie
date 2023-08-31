@@ -1,8 +1,11 @@
 import React from 'react';
 import { Content, Header, HeaderTitle, Image, MainText, Span, TextWrapper, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper } from './styledCultivation';
 import ex from '../../common/Images/Example/bee.png';
+import { useInView } from 'react-intersection-observer';
+import AnimatedTile from './AnimatedTile';
 
 export const Cultivation = () => {
+
     return (
         <Wrapper>
             <Header>
@@ -20,57 +23,66 @@ export const Cultivation = () => {
                 </TextWrapper>
 
                 <TileWrapper>
-                    <Tile>
-                        <TileTextWrapper>
-                            <TileTitle>
-                                Lorem Ipsum
-                            </TileTitle>
-                            <TileText>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur minima enim aliquid sit neque ea repellendus totam tenetur expedita quisquam quaerat adipisci inventore quam beatae nemo, nostrum iusto error est!
-                            </TileText>
-                        </TileTextWrapper>
-                        <Image src={ex} />
-                    </Tile>
 
-                    <Tile left>
-                        <Image src={ex} />
-                        <TileTextWrapper>
-                            <TileTitle>
-                                Lorem Ipsum
-                            </TileTitle>
-                            <TileText>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur minima enim aliquid sit neque ea repellendus totam tenetur expedita quisquam quaerat adipisci inventore quam beatae nemo, nostrum iusto error est!
-                            </TileText>
-                        </TileTextWrapper>
-                    </Tile>
+                        <Tile>
+                            <TileTextWrapper>
+                                <TileTitle>
+                                    Lorem Ipsum
+                                </TileTitle>
+                                <TileText>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur minima enim aliquid sit neque ea repellendus totam tenetur expedita quisquam quaerat adipisci inventore quam beatae nemo, nostrum iusto error est!
+                                </TileText>
+                            </TileTextWrapper>
+                            <Image src={ex} />
+                        </Tile>
+                    <AnimatedTile>
 
-                    <Tile>
-                        <TileTextWrapper>
-                            <TileTitle>
-                                Lorem Ipsum
-                            </TileTitle>
-                            <TileText>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur minima enim aliquid sit neque ea repellendus totam tenetur expedita quisquam quaerat adipisci inventore quam beatae nemo, nostrum iusto error est!
-                            </TileText>
-                        </TileTextWrapper>
-                        <Image src={ex} />
-                    </Tile>
+                        <Tile left>
+                            <Image src={ex} />
+                            <TileTextWrapper>
+                                <TileTitle>
+                                    Lorem Ipsum
+                                </TileTitle>
+                                <TileText>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur minima enim aliquid sit neque ea repellendus totam tenetur expedita quisquam quaerat adipisci inventore quam beatae nemo, nostrum iusto error est!
+                                </TileText>
+                            </TileTextWrapper>
+                        </Tile>
+                    </AnimatedTile>
+                    <AnimatedTile>
 
-                    <Tile left>
-                        <Image src={ex} />
-                        <TileTextWrapper>
-                            <TileTitle>
-                                Lorem Ipsum
-                            </TileTitle>
-                            <TileText>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur minima enim aliquid sit neque ea repellendus totam tenetur expedita quisquam quaerat adipisci inventore quam beatae nemo, nostrum iusto error est!
-                            </TileText>
-                        </TileTextWrapper>
-                    </Tile>
+                        <Tile>
+                            <TileTextWrapper>
+                                <TileTitle>
+                                    Lorem Ipsum
+                                </TileTitle>
+                                <TileText>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur minima enim aliquid sit neque ea repellendus totam tenetur expedita quisquam quaerat adipisci inventore quam beatae nemo, nostrum iusto error est!
+                                </TileText>
+                            </TileTextWrapper>
+                            <Image src={ex} />
+                        </Tile>
+                    </AnimatedTile>
+                    <AnimatedTile>
+
+                        <Tile left>
+                            <Image src={ex} />
+                            <TileTextWrapper>
+                                <TileTitle>
+                                    Lorem Ipsum
+                                </TileTitle>
+                                <TileText>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur minima enim aliquid sit neque ea repellendus totam tenetur expedita quisquam quaerat adipisci inventore quam beatae nemo, nostrum iusto error est!
+                                </TileText>
+                            </TileTextWrapper>
+                        </Tile>
+                    </AnimatedTile>
+
+
                 </TileWrapper>
             </Content>
 
-        </Wrapper>
+        </Wrapper >
     );
 };
 
