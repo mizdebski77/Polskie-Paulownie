@@ -95,6 +95,10 @@ export const FullScreenWrapper = styled.div`
     height: 100%;
     background: rgba(0, 0, 0, 0.95);
     padding: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+      padding: 12px;
+    };
 `;
 
 export const CustomSwiper = styled(Swiper)`
@@ -122,6 +126,10 @@ export const FullScreenImage = styled.img`
     max-height: 100%;
     max-width: 100%;
     user-select: none;
+    
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+      margin-top: 25%;
+    };
 `;
 
 export const CloseButton = styled.button`

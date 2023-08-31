@@ -15,7 +15,7 @@ export const Wrapper = styled.section`
 export const Title = styled.h1`
     text-align: center;
     font-size: 64px;
-    color: ${({theme}) => theme.color.secondColor};
+    color: ${({ theme }) => theme.color.secondColor};
     margin-bottom: 0px;
     animation: ${slideBottom} 1s;
 
@@ -108,7 +108,7 @@ export const Select = styled.select`
     background: transparent;
     border: none;
     padding: 10px;
-    border-bottom: 2px solid ${({theme}) => theme.color.secondColor};
+    border-bottom: 2px solid ${({ theme }) => theme.color.secondColor};
 `;
 
 export const TextArea = styled.textarea`
@@ -132,8 +132,8 @@ export const Button = styled.button`
     max-width: 200px;
     width: 100%;
     font-size: 20px;
-    color: ${({theme}) => theme.color.mainColor};
-    background: ${({theme}) => theme.color.secondColor};
+    color: ${({ theme }) => theme.color.mainColor};
+    background: ${({ theme }) => theme.color.secondColor};
     border-radius: 10px;
     float:right ;
     cursor: pointer;
@@ -147,7 +147,7 @@ export const Button = styled.button`
 
     &:hover {
         transform: scale(1.05);
-        box-shadow: 0 0 10px ${({theme}) => theme.color.secondColor};
+        box-shadow: 0 0 10px ${({ theme }) => theme.color.secondColor};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         transform: none;
@@ -156,11 +156,13 @@ export const Button = styled.button`
 `;
 
 export const Link = styled.a`
-    color: ${({theme}) => theme.color.secondColor};
-    font-size: 32px;
-    font-weight: bold;
+    color: ${({ theme }) => theme.color.secondColor};
+    font-size: 28px;
+    font-weight: normal;
+    text-decoration: underline;
     text-align: center;
-
+    text-underline-offset: 10px; 
+    
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 20px;
     };
@@ -207,7 +209,7 @@ export const LinksTitle = styled.h4`
     text-align: center;
     font-size: 36px;
     font-weight: 600;
-    color: ${({theme}) => theme.color.secondColor};
+    color: ${({ theme }) => theme.color.secondColor};
     margin-top: 20px;
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 28px;
@@ -215,7 +217,7 @@ export const LinksTitle = styled.h4`
 `;
 
 export const TextField = styled.div`
-    border-bottom: 2px solid ${({theme}) => theme.color.secondColor};
+    border-bottom: 2px solid ${({ theme }) => theme.color.secondColor};
     display: flex;
     align-items: center;
     gap: 20px;
