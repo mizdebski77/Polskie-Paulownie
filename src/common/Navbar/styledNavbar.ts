@@ -71,20 +71,21 @@ export const Links = styled(NavLink)`
     text-underline-offset: 6px;
     padding: 10px 12px;
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 20px;
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        font-size: 16px;
         padding: 12px;
         width: 70%;
         margin: 0 auto;
         border-radius: 0;
         color: ${({ theme }) => theme.color.mainColor};
+
     };
 
     &:hover {
         transform: translateY(-5px);
         color: ${({ theme }) => theme.color.secondColor};
 
-        @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
             transform: none;
             text-decoration: none;
         };
@@ -94,7 +95,7 @@ export const Links = styled(NavLink)`
         color: ${({ theme }) => theme.color.secondColor};
         text-decoration: underline;
 
-        @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         color: white;
         };
 
@@ -124,6 +125,9 @@ export const PhoneNavbarWrapper = styled.div`
     width: 100%;
     z-index: 99;
     padding: 0 0 20px 0;
+    border: 2px solid ${({theme}) => theme.color.mainColor};
+    padding: 12px;
+    min-height: 200px;
 
     @media (min-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         display: none;
