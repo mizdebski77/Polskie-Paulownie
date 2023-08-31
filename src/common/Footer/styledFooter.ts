@@ -16,6 +16,7 @@ export const Wrapper = styled.footer`
         gap: 40px;
         padding: 10px;
         justify-content: center;
+        min-height: 480px;
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
@@ -38,6 +39,7 @@ export const Logo = styled.img`
 
 export const ContactWrapper = styled.div`
     display: grid;
+    gap: 12px;
 `;
 
 export const FooterTitle = styled.span`
@@ -52,7 +54,7 @@ export const FooterTitle = styled.span`
 
 export const ContactElement = styled.p`
     font-size: 20px;
-    margin: 10px;
+    margin: 0px;
     text-align: center;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
@@ -96,4 +98,9 @@ export const SVGLink = styled.a`
 export const Image = styled.img`
     width: 48px;
     height: 48px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        width: 40px;
+        height: 40px;
+    };
 `;
