@@ -24,9 +24,9 @@ export const Footer = () => {
             <Socials>
                 <FooterTitle> Skontaktuj się z nami:</FooterTitle>
                 <SVGLinks>
-                    <SVGLink><Image src={phone} /></SVGLink>
-                    <SVGLink><Image src={mail} /></SVGLink>
-                    <SVGLink><Image src={facebook} /></SVGLink>
+                    <SVGLink href='https://www.facebook.com/profile.php?id=100067548942538' target='blank'><Image src={facebook} /></SVGLink>
+                    <SVGLink href="mailto: zbigniew.machulik@gmail.com"><Image src={mail} /></SVGLink>
+                    <SVGLink href="tel:603554885"><Image src={phone} /></SVGLink>
                 </SVGLinks>
             </Socials>
         </Wrapper>

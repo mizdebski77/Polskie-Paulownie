@@ -17,13 +17,13 @@ export const Contact = () => {
                 <ContactItemWrapper>
                     <ContactTitle>Skontaktuj się z nami</ContactTitle>
                     <ContactSvgWrapper>
-                        <SVGLink>
+                        <SVGLink href='https://www.facebook.com/profile.php?id=100067548942538' target='blank' >
                             <SVGIcon src={facebook} />
                         </SVGLink>
-                        <SVGLink>
+                        <SVGLink href="mailto: zbigniew.machulik@gmail.com">
                             <SVGIcon src={mail} />
                         </SVGLink>
-                        <SVGLink>
+                        <SVGLink href="tel:603554885">
                             <SVGIcon src={phone} />
                         </SVGLink>
                     </ContactSvgWrapper>
