@@ -69,27 +69,24 @@ export const closeWrapper = {
 
 export const MobileNavAnimation = {
     visible: {
-        height: 280,
-        opacity: 1,
         transition: {
-            x: { velocity: 100 },
-            duration: 0.3,
+            staggerChildren: 0.2,
+            staggerDirection: -1
         }
     },
-  
+
     hidden: {
-        height: 24,
-        opacity: 0,
         transition: {
-            x: { velocity: 100 },
-            duration: 0.3,
-            delay: 0.2
+          staggerChildren: 0.2,
+          staggerDirection: 1
         }
-    }
-  };
-  
-  
-  export const MobileLinksWrapperAnimation = {
+      }
+    };
+
+
+
+
+export const MobileLinksWrapperAnimation = {
     visible: {
         opacity: 1,
         transition: {
@@ -103,4 +100,4 @@ export const MobileNavAnimation = {
             staggerDirection: -1
         }
     }
-  };
+};

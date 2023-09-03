@@ -1,4 +1,4 @@
-import { css, styled } from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.section`
     display: grid;
@@ -38,7 +38,7 @@ export const ContentWrapper = styled.div <{ reverse?: boolean }>`
 
 export const ServicesTitle = styled.h2`
     font-size: 36px;
-    color: ${({theme}) => theme.color.secondColor};
+    color: ${({ theme }) => theme.color.secondColor};
     text-align: center;
     margin: 0;
 

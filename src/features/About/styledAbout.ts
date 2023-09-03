@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 import ex from '../../common/Images/Example/header1.jpg';
 import { opacitySlide, slideBottom, slideLeft, slideRight } from "../../core/animations";
 

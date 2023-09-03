@@ -22,6 +22,27 @@ export const Navbar = () => {
         window.scrollTo(0, 0);
     };
 
+    const itemVariants = {
+        closed: {
+          opacity: 0
+        },
+        open: { opacity: 1 }
+      };
+      const sideVariants = {
+        closed: {
+          transition: {
+            staggerChildren: 0.2,
+            staggerDirection: -1
+          }
+        },
+        open: {
+          transition: {
+            staggerChildren: 0.2,
+            staggerDirection: 1
+          }
+        }
+      };
+
     return (
         <>
             <Wrapper>
@@ -42,7 +63,8 @@ export const Navbar = () => {
 
             <AnimatePresence>
                 {phoneNavbar && (
-                    <PhoneNavbarWrapper as={motion.div}
+                    <PhoneNavbarWrapper 
+                    as={motion.div}
                         initial="hidden"
                         animate={phoneNavbar ? "visible" : "hidden"}
                         exit="hidden"
@@ -62,7 +84,7 @@ export const Navbar = () => {
                                     onClick={() => {
                                         onLinkClick();
                                         closePhoneNavbar();
-                                        window.scrollTo(0,0)
+                                        window.scrollTo(0, 0)
                                     }}
                                 >
                                     {link.text}

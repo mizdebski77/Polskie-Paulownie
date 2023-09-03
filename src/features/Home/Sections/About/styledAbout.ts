@@ -1,4 +1,4 @@
-import { css, styled } from "styled-components";
+import styled, { css } from "styled-components";
 import { slideBottom, slideLeft, slideRight } from "../../../../core/animations";
 
 export const Wrapper = styled.section`

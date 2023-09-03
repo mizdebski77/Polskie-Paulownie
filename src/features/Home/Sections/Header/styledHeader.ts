@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { styled } from "styled-components";
+import styled from "styled-components";
 import { buttonsAnimation, opacitySlide, slideBottom, slideRight } from "../../../../core/animations";
 import Slider from "react-slick";
 

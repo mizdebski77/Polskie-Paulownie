@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.section`
     max-width: 1320px;

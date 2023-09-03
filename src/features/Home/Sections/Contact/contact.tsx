@@ -11,7 +11,7 @@ export const Contact = () => {
             <AnimatedElement bottom>
                 <ContactWrapper>
                     <ContactItemWrapper>
-                        <ContactLink to="/Kontakt">
+                        <ContactLink to="/Kontakt" onClick={() => window.scrollTo(0, 0)}>
                             <ContactButton>Wypełnij formularz kontaktowy</ContactButton>
                         </ContactLink>
                     </ContactItemWrapper>

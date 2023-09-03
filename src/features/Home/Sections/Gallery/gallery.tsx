@@ -54,7 +54,7 @@ export const Gallery = () => {
                 </AnimatedElement>
 
                 <AnimatedElement>
-                    <GalleryLink to="/Galeria">
+                    <GalleryLink to="/Galeria" onClick={() => window.scrollTo(0, 0)}>
                         <Button>Sprawdź wszystie nasze zdjęcia</Button>
                     </GalleryLink>
                 </AnimatedElement>
