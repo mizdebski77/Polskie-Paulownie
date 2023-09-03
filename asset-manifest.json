@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/DM-Atelier/static/css/main.b64f59c0.css",
+    "main.js": "/DM-Atelier/static/js/main.224125cc.js",
+    "static/js/787.70f169b2.chunk.js": "/DM-Atelier/static/js/787.70f169b2.chunk.js",
+    "static/media/XD.png": "/DM-Atelier/static/media/XD.b9fa9695396bae528c68.png",
+    "static/media/header1.jpg": "/DM-Atelier/static/media/header1.9827332f2c467b1beda8.jpg",
+    "static/media/header2.jpg.png": "/DM-Atelier/static/media/header2.jpg.0fd78d997bbb0a1e12dd.png",
+    "static/media/header2.jpg": "/DM-Atelier/static/media/header2.acff8920c640dd0a65ba.jpg",
+    "static/media/tree.png": "/DM-Atelier/static/media/tree.9564415e2ae0560d09ea.png",
+    "static/media/Logo-paulownie.png": "/DM-Atelier/static/media/Logo-paulownie.ae412cfdce0d99667dbc.png",
+    "static/media/Navabr.png": "/DM-Atelier/static/media/Navabr.3efaf824765c41c4e074.png",
+    "static/media/ex3.jpg": "/DM-Atelier/static/media/ex3.244e785c1bdb28696f98.jpg",
+    "static/media/pinkex.png": "/DM-Atelier/static/media/pinkex.5ff8d49b8e5158e9ceb6.png",
+    "static/media/ex2.jpg": "/DM-Atelier/static/media/ex2.8c56a88181499b98248c.jpg",
+    "static/media/bee.png": "/DM-Atelier/static/media/bee.51cff2a6417e24bedd85.png",
+    "static/media/ex1.jpg": "/DM-Atelier/static/media/ex1.1b998d5558abde5b84c0.jpg",
+    "static/media/slick.svg": "/DM-Atelier/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/DM-Atelier/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/DM-Atelier/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/DM-Atelier/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/facebook.svg": "/DM-Atelier/static/media/facebook.13feb122c980b97294e4f4ca9fb0c5d5.svg",
+    "index.html": "/DM-Atelier/index.html",
+    "static/media/mail.svg": "/DM-Atelier/static/media/mail.284398557b455636a0beb6206c94de01.svg",
+    "static/media/location.svg": "/DM-Atelier/static/media/location.09386c4789b6ba75131f490197a87a7a.svg",
+    "static/media/phone.svg": "/DM-Atelier/static/media/phone.9bab0b2e984089b132868868d1ee64fd.svg",
+    "main.b64f59c0.css.map": "/DM-Atelier/static/css/main.b64f59c0.css.map",
+    "main.224125cc.js.map": "/DM-Atelier/static/js/main.224125cc.js.map",
+    "787.70f169b2.chunk.js.map": "/DM-Atelier/static/js/787.70f169b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b64f59c0.css",
+    "static/js/main.224125cc.js"
+  ]
+}
