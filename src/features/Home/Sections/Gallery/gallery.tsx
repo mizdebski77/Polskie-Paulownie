@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import { AiOutlineClose } from 'react-icons/ai'
 import { motion } from 'framer-motion';
 import { closeImage, closeWrapper, openImage, openWrapper } from '../../../../core/animations';
+import AnimatedElement from '../AnimatedElements';
 
 export const Gallery = () => {
 
@@ -42,16 +43,22 @@ export const Gallery = () => {
         <>
 
             <Wrapper>
-                <ImagesWrapper>
-                    {data.map((img) => (
-                        <Pics key={img.id}>
-                            <GalleryImage src={img.imgsrc} onClick={() => openFullScreen(img.imgsrc)} />
-                        </Pics>
-                    ))}
-                </ImagesWrapper>
-                <GalleryLink to="/Galeria">
-                    <Button>Sprawdź wszystie nasze zdjęcia</Button>
-                </GalleryLink>
+                <AnimatedElement gallery>
+                    <ImagesWrapper>
+                        {data.map((img) => (
+                            <Pics key={img.id}>
+                                <GalleryImage src={img.imgsrc} onClick={() => openFullScreen(img.imgsrc)} />
+                            </Pics>
+                        ))}
+                    </ImagesWrapper>
+                </AnimatedElement>
+
+                <AnimatedElement>
+                    <GalleryLink to="/Galeria">
+                        <Button>Sprawdź wszystie nasze zdjęcia</Button>
+                    </GalleryLink>
+                </AnimatedElement>
+
             </Wrapper>
 
             {fullScreenSrc && (

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import { slideBottom } from "../../../../core/animations";
 
 export const Wrapper = styled.section`
     max-width: 1320px;
@@ -19,7 +18,6 @@ export const ContactWrapper = styled.div`
     align-items: center;
     justify-content: space-around;
     padding:  40px 12px;
-    animation: ${slideBottom} 1s;
     border-radius: 10px;
     
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){

@@ -1,5 +1,4 @@
-import { styled } from "styled-components";
-import { slideBottom } from "../../core/animations";
+import { css, styled } from "styled-components";
 
 export const Wrapper = styled.div`
     min-height: 100vh;
@@ -14,9 +13,63 @@ export const Title = styled.header`
     font-weight: 600 ;
     text-align: center;
     color: ${({ theme }) => theme.color.secondColor};
-    animation: ${slideBottom} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 32px;
     };  
+`;
+
+export const AnimatedElementWrapper = styled.div <{ left?: boolean, bottom?: boolean, gallery?: boolean }>`
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateX(30%);
+    transition: opacity 1s, transform 1s;
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        transform: translateY(10%);
+    };
+
+    ${({ left }) => left && css`
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateX(-30%);
+        transition: opacity 1s, transform 1s;
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        };
+    `};
+
+    ${({ bottom }) => bottom && css`
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateY(20%);
+        transition: opacity 1s, transform 1s;
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        };
+    `};
+
+    ${({ gallery }) => gallery && css`
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateY(10%);
+        transition: opacity 1s, transform 1s;
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        };
+
+        @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        transform: translateY(2%);
+    };
+    `};
 `;

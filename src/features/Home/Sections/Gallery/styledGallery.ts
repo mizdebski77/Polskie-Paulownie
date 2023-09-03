@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
-import { buttonsAnimation, opacitySlide, slideBottom } from "../../../../core/animations";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Wrapper = styled.section`
@@ -21,7 +20,6 @@ export const ImagesWrapper = styled.div`
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    animation: ${opacitySlide} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         grid-template-columns: 1fr 1fr;
@@ -49,7 +47,6 @@ export const GalleryLink = styled(Link)`
     max-width: 360px;
     margin: 0 auto;
     width: 100%;
-    animation: ${buttonsAnimation} 1s;
 `;
 
 export const Pics = styled.div`
