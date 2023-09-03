@@ -12,7 +12,7 @@ interface AnimatedElementProps {
 
 const AnimatedElement: React.FC<AnimatedElementProps> = ({ children, left, bottom, gallery }) => {
     const [ref, inView] = useInView({
-        triggerOnce: false,
+        triggerOnce: true,
         rootMargin: calculateRootMargin(),
     });
 
