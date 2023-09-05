@@ -92,7 +92,7 @@ export const CustomSlider = styled(Slider)`
         max-width: 500px;
     };
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        max-width: 360px;
+        max-width: 320px;
     };
 `;
 

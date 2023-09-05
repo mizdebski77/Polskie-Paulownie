@@ -37,7 +37,7 @@ export const HeaderTitle = styled.h1`
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 40px;
+        font-size: 36px;
     };
 `;
 
@@ -150,6 +150,7 @@ export const TileText = styled.article`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 20px;
+        text-align: center;
     };
 `;
 

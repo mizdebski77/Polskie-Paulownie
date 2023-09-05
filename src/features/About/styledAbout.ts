@@ -38,7 +38,7 @@ export const HeaderTitle = styled.h1`
     animation: ${slideBottom} 1s;
     
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 64px;
+        font-size: 56px;
     };
 `;
 

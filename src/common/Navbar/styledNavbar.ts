@@ -14,7 +14,7 @@ export const Wrapper = styled.nav <{ scrolled?: boolean }>`
     transition: 0.3s;
     
     ${({ scrolled }) => scrolled && css`
-    border-bottom: 2px solid ${({theme}) => theme.color.secondColor};
+    border-bottom: 2px solid ${({ theme }) => theme.color.secondColor};
   `};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
@@ -93,6 +93,7 @@ export const Links = styled(NavLink)`
         @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
             transform: none;
             text-decoration: none;
+            color: ${({ theme }) => theme.color.mainColor};
         };
     };
 
@@ -130,7 +131,6 @@ export const PhoneNavbarWrapper = styled.div`
     width: 100%;
     z-index: 1;
     padding: 0 0 20px 0;
-    border: 2px solid ${({ theme }) => theme.color.mainColor};
     padding: 12px;
     min-height: 200px;
 

@@ -170,7 +170,7 @@ export const Link = styled.a`
     }
     
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 20px;
+        font-size: 16px;
     };
     
 `;
