@@ -5,12 +5,13 @@ import mail from '../Images/WhiteSVG/mail.svg';
 import facebook from '../Images/WhiteSVG/facebook.svg';
 export const Footer = () => {
 
+
     const handleClick = () => {
         window.scrollTo(0, 0);
     };
 
     return (
-        <Wrapper>
+        <Wrapper >
             <LogoLink to="./Strona-Główna" onClick={handleClick}>
                 <Logo src={logo} />
             </LogoLink>

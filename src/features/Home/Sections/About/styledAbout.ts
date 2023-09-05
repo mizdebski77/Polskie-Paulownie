@@ -12,7 +12,7 @@ export const Wrapper = styled.section`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         grid-template-columns: 1fr;
-        padding: 12px;
+        padding: 0;
         margin-top: 40px;
         text-align: center;
     };
@@ -42,6 +42,7 @@ export const ContentWrapper = styled.div <{ reverse?: boolean }>`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display: flex;
         flex-direction: column;
+        gap: 20px;
 
         ${({ reverse }) => reverse && css`
             flex-direction: column-reverse;

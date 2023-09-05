@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
     gap: 40px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        padding: 20px;
+        padding: 12px;
         gap: 20px;
     };
 `;
@@ -73,7 +73,8 @@ export const Button = styled.button`
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 16px;
+        font-size: 14px;
+        padding: 16px;
     };
 `;
 

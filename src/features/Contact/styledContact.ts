@@ -159,7 +159,7 @@ export const Link = styled.a`
     color: ${({ theme }) => theme.color.secondColor};
     font-size: 28px;
     font-weight: normal;
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
     text-underline-offset: 10px; 
     cursor: pointer;
@@ -187,7 +187,7 @@ export const SVGIcon = styled.img`
 
 
 export const LinkContainer = styled.div`
-    box-shadow: 0px 0px 22px -3px rgba(16, 136, 0, 0.50);
+    box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     animation: ${slideRight} 1s;
     padding-bottom: 20px;

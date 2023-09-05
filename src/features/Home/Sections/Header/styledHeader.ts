@@ -14,7 +14,7 @@ export const Wrapper = styled.section`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
         grid-template-columns: 1fr;
-        padding: 12px;
+        padding: 0px;
     }
 `;
 
@@ -72,7 +72,8 @@ export const HeaderButton = styled.button`
     transition: 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 16px;
+        font-size: 14px;
+        padding: 12px;
     }
 
     &:hover{
@@ -91,7 +92,7 @@ export const CustomSlider = styled(Slider)`
         max-width: 500px;
     };
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        max-width: 320px;
+        max-width: 360px;
     };
 `;
 

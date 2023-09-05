@@ -88,6 +88,7 @@ export const AboutText = styled.article`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 20px;
+        text-align: center;
     };
 `;
 

@@ -37,7 +37,7 @@ export const HeaderTitle = styled.h1`
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 44px;
+        font-size: 40px;
     };
 `;
 

@@ -23,11 +23,6 @@ export const Gallery = () => {
         { id: 8, imgsrc: ex1 },
         { id: 9, imgsrc: ex2 },
         { id: 10, imgsrc: ex1 },
-        { id: 13, imgsrc: ex2 },
-        { id: 14, imgsrc: ex1 },
-        { id: 15, imgsrc: ex2 },
-        { id: 16, imgsrc: ex1 },
-        { id: 19, imgsrc: ex2 }
     ];
 
     const openFullScreen = (src: string) => {

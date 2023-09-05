@@ -72,7 +72,7 @@ export const Span = styled.span`
     font-size: 40px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 32px;
+        font-size: 24px;
     };
 `;
 
@@ -100,7 +100,8 @@ export const ContactButton = styled.button`
     transition: 0.5s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 16px;
+        font-size: 14px;
+        padding: 16px;
     };
 
     &:hover{

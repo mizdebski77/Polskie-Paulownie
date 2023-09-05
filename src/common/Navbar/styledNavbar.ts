@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { NavLink, Link } from "react-router-dom";
 
-export const Wrapper = styled.nav`
+export const Wrapper = styled.nav <{ scrolled?: boolean }>`
     width: 100%;
     display: flex;
     align-items: center;
@@ -11,6 +11,11 @@ export const Wrapper = styled.nav`
     z-index: 10; 
     top:0;
     background: ${({ theme }) => theme.color.mainColor};
+    transition: 0.3s;
+    
+    ${({ scrolled }) => scrolled && css`
+    border-bottom: 2px solid ${({theme}) => theme.color.secondColor};
+  `};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.firstBreakPoint}px){
         padding: 12px 20px;
@@ -123,9 +128,9 @@ export const PhoneNavbarWrapper = styled.div`
     border-bottom: 1px solid ${({ theme }) => theme.color.secondColor};
     position: fixed;
     width: 100%;
-    z-index: 99;
+    z-index: 1;
     padding: 0 0 20px 0;
-    border: 2px solid ${({theme}) => theme.color.mainColor};
+    border: 2px solid ${({ theme }) => theme.color.mainColor};
     padding: 12px;
     min-height: 200px;
 

@@ -11,9 +11,9 @@ export const Wrapper = styled.section`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         text-align: center;
-        padding: 12px;
+        padding: 20px 0 0 0;
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 32px;
     };
 `;
 
@@ -29,6 +29,7 @@ export const ContentWrapper = styled.div <{ reverse?: boolean }>`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display: flex;
         flex-direction: column;
+        gap: 20px;
 
         ${({ reverse }) => reverse && css`
             flex-direction: column-reverse;

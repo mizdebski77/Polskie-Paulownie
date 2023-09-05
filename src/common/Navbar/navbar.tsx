@@ -4,10 +4,23 @@ import { Divide as Hamburger } from 'hamburger-react';
 import { links } from './Links';
 import logo from '../Images/Navabr.png';
 import { AnimatePresence, motion } from 'framer-motion';
-import { MobileLinksWrapperAnimation, MobileNavAnimation } from '../../core/animations';
+import { mobileNavAnimation } from '../../core/animations';
 
 export const Navbar = () => {
     const [phoneNavbar, setPhoneNavbar] = useState<boolean>(false);
+
+    const [navbarBorder, setNavbarBorder] = useState(false);
+
+    const adBorder = () => {
+        if (window.scrollY >= 100) {
+            setNavbarBorder(true);
+        } else {
+            setNavbarBorder(false);
+        };
+    };
+
+    window.addEventListener("scroll", adBorder, { passive: true });
+
 
     const togglePhoneNavbar = () => {
         setPhoneNavbar(!phoneNavbar);
@@ -22,30 +35,11 @@ export const Navbar = () => {
         window.scrollTo(0, 0);
     };
 
-    const itemVariants = {
-        closed: {
-          opacity: 0
-        },
-        open: { opacity: 1 }
-      };
-      const sideVariants = {
-        closed: {
-          transition: {
-            staggerChildren: 0.2,
-            staggerDirection: -1
-          }
-        },
-        open: {
-          transition: {
-            staggerChildren: 0.2,
-            staggerDirection: 1
-          }
-        }
-      };
+
 
     return (
         <>
-            <Wrapper>
+            <Wrapper scrolled={navbarBorder}>
                 <LogoLink to="/Strona-Główna">
                     <Logo src={logo} alt='Logo' />Polskie Paulownie
                 </LogoLink>
@@ -63,20 +57,14 @@ export const Navbar = () => {
 
             <AnimatePresence>
                 {phoneNavbar && (
-                    <PhoneNavbarWrapper 
-                    as={motion.div}
+                    <PhoneNavbarWrapper
+                        as={motion.div}
                         initial="hidden"
                         animate={phoneNavbar ? "visible" : "hidden"}
                         exit="hidden"
-                        variants={MobileNavAnimation}
+                        variants={mobileNavAnimation}
                     >
-                        <PhoneLinksWrapper
-                            as={motion.div}
-                            initial="hidden"
-                            animate="visible"
-                            exit="hidden"
-                            variants={MobileLinksWrapperAnimation}
-                        >
+                        <PhoneLinksWrapper>
                             {links.map((link, index) => (
                                 <Links
                                     key={index}

@@ -7,7 +7,7 @@ export const Wrapper = styled.footer`
     align-items:center;
     justify-content: space-around;
     padding: 20px;
-    min-height: 400px;
+    min-height: 320px;
     background: ${({theme}) => theme.color.secondColor};
     color: white;
 
@@ -20,7 +20,8 @@ export const Wrapper = styled.footer`
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        gap: 20px;
+        gap: 0px;
+        min-height: 440px;
     };
 `;
 

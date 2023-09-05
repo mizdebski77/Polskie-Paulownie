@@ -67,37 +67,19 @@ export const closeWrapper = {
     opacity: 0,
 };
 
-export const MobileNavAnimation = {
-    visible: {
-        transition: {
-            staggerChildren: 0.2,
-            staggerDirection: -1
-        }
-    },
-
+export const mobileNavAnimation = {
     hidden: {
-        transition: {
-          staggerChildren: 0.2,
-          staggerDirection: 1
-        }
-      }
-    };
-
-
-
-
-export const MobileLinksWrapperAnimation = {
-    visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.07
-        }
-    },
-    hidden: {
+        y: "-100%",
         opacity: 0,
         transition: {
-            staggerChildren: 0.05,
-            staggerDirection: -1
-        }
-    }
+            type: "tween",
+        },
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "tween",
+        },
+    },
 };
