@@ -33,6 +33,9 @@ export const LogoLink = styled(Link)`
 
 export const Logo = styled.img`
     width: 280px;
+    border-radius: 300px;
+    background: white ;
+    border: 10px solid white;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         width: 140px;

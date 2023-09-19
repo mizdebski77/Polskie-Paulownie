@@ -1,5 +1,5 @@
 import { ContactElement, ContactWrapper, FooterTitle, Image, Logo, LogoLink, SVGLink, SVGLinks, Socials, Wrapper } from './styledFooter';
-import logo from '../Images/Logo-paulownie.png';
+import logo from '../Images/pp logo white background.png';
 import phone from '../Images/WhiteSVG/phone.svg';
 import mail from '../Images/WhiteSVG/mail.svg';
 import facebook from '../Images/WhiteSVG/facebook.svg';
