@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ex from '../../common/Images/Example/header1.jpg';
+import ex from '../../common/Images/about/TŁO_OP2.png';
 import { opacitySlide, slideBottom, slideLeft, slideRight } from "../../core/animations";
 
 export const Wrapper = styled.div`

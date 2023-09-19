@@ -1,6 +1,6 @@
 import React from 'react';
 import { AboutText, Content, Header, HeaderTitle, Image, TextWrapper, Title, Wrapper } from './styledAbout';
-import ex from '../../common/Images/Example/header1.jpg';
+import circleImage from '../../common/Images/about/Untitled-1.png';
 
 export const About = () => {
     return (
@@ -10,7 +10,7 @@ export const About = () => {
             </Header>
 
             <Content>
-                <Image src={ex} />
+                <Image src={circleImage} />
 
                 <TextWrapper>
                     <Title>Polskie Paulownie</Title>
