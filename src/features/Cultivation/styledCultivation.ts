@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import ex from '../../common/Images/Example/header1.jpg';
+import background from '../../common/Images/cultivation/TŁO.jpg';
 import { opacitySlide, slideBottom, slideLeft, slideRight } from "../../core/animations";
 
 export const Wrapper = styled.div`
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 export const Header = styled.header`
     width: 100%;
     height: 240px;
-    background-image: url("${ex}");
+    background-image: url("${background}");
     background-size: cover;
     background-position: center;
     display: flex;

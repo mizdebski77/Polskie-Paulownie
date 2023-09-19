@@ -1,7 +1,6 @@
 import React from 'react';
 import { Content, Header, HeaderTitle, Image, MainText, Span, TextWrapper, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper } from './styledCultivation';
 import ex from '../../common/Images/Example/bee.png';
-import { useInView } from 'react-intersection-observer';
 import AnimatedTile from './AnimatedTile';
 
 export const Cultivation = () => {
