@@ -26,10 +26,6 @@ export const Navbar = () => {
         setPhoneNavbar(!phoneNavbar);
     };
 
-    const closePhoneNavbar = () => {
-        setPhoneNavbar(false);
-    };
-
     const onLinkClick = () => {
         togglePhoneNavbar();
         window.scrollTo(0, 0);
@@ -71,7 +67,6 @@ export const Navbar = () => {
                                     to={link.link}
                                     onClick={() => {
                                         onLinkClick();
-                                        closePhoneNavbar();
                                         window.scrollTo(0, 0)
                                     }}
                                 >
