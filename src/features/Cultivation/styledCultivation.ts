@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import background from '../../common/Images/cultivation/TŁO.jpg';
+import background from './background.jpg';
 import { opacitySlide, slideBottom, slideLeft, slideRight } from "../../core/animations";
 
 export const Wrapper = styled.div`
