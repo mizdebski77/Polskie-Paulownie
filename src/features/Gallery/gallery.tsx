@@ -17,30 +17,30 @@ declare const require: {
 
 export const Gallery = () => {
 
-    const [fullScreen, setFullScreen] = useState<boolean>(false);
-    const [fullScreenSrc, setFullScreenSrc] = useState<string>("");
+    // const [fullScreen, setFullScreen] = useState<boolean>(false);
+    // const [fullScreenSrc, setFullScreenSrc] = useState<string>("");
 
-    const imagesFolder = require.context('../../common/Images/gallery', false, /\.(png|jpg|jpeg|gif|svg|ico|JPEG|JPG|jpeg)$/);
-    const imageKeys = imagesFolder.keys();
+    // const imagesFolder = require.context('../../common/Images/gallery', false, /\.(png|jpg|jpeg|gif|svg|ico|JPEG|JPG|jpeg)$/);
+    // const imageKeys = imagesFolder.keys();
 
-    const openFullScreen = (src: string) => {
-        setFullScreenSrc(src);
-        setFullScreen(true);
-    };
+    // const openFullScreen = (src: string) => {
+    //     setFullScreenSrc(src);
+    //     setFullScreen(true);
+    // };
 
-    const closeFullScreen = () => {
-        setFullScreen(false);
-        setFullScreenSrc("");
-    };
+    // const closeFullScreen = () => {
+    //     setFullScreen(false);
+    //     setFullScreenSrc("");
+    // };
 
-    const handleImageContextMenu = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
-        e.preventDefault();
-    };
+    // const handleImageContextMenu = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
+    //     e.preventDefault();
+    // };
 
 
     return (
         <>
-            <Wrapper>
+            {/* <Wrapper>
                 <Header>
                     <HeaderTitle>Galeria zdjęć</HeaderTitle>
                 </Header>
@@ -93,7 +93,7 @@ export const Gallery = () => {
                         onClick={() => closeFullScreen()}>
                         <AiOutlineClose size={35} />
                     </CloseButton>
-                </FullScreenWrapper>)}
+                </FullScreenWrapper>)} */}
         </>
 
     );
