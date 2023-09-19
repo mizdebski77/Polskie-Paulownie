@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ex from '../../common/Images/Example/header1.jpg';
+import ex from '../../common/Images/gallery/NAPIS_TŁO.jpg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { opacitySlide, slideBottom } from "../../core/animations";
 
@@ -76,6 +76,7 @@ export const Image = styled.img`
   transition: 0.5s linear;
   transition-timing-function:ease-in-out;
   transform: scale(1.04);
+
 
   &:hover {
     zoom: normal;

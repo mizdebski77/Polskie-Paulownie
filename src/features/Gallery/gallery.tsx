@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import ex1 from '../../common/Images/Example/ex1.jpg';
-import ex2 from '../../common/Images/Example/ex2.jpg';
-import ex3 from '../../common/Images/Example/ex3.jpg';
 import { CloseButton, CustomSlide, CustomSwiper, FullScreenImage, FullScreenWrapper, GalleryWrapper, Image, Header, Pics, Wrapper, HeaderTitle } from './styledGallery';
 import { Navigation } from 'swiper/modules'
 import 'swiper/css';
@@ -10,33 +7,21 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { motion } from 'framer-motion';
 import { closeImage, closeWrapper, openImage, openWrapper } from '../../core/animations';
 
+declare const require: {
+    context(path: string, recursive: boolean, regExp: RegExp): {
+        keys(): string[];
+        <T>(id: string): T;
+    };
+};
+
+
 export const Gallery = () => {
 
     const [fullScreen, setFullScreen] = useState<boolean>(false);
     const [fullScreenSrc, setFullScreenSrc] = useState<string>("");
 
-
-    const data = [
-        { id: 1, imgsrc: ex1 },
-        { id: 2, imgsrc: ex2 },
-        { id: 3, imgsrc: ex3 },
-        { id: 4, imgsrc: ex2 },
-        { id: 5, imgsrc: ex2 },
-        { id: 6, imgsrc: ex3 },
-        { id: 7, imgsrc: ex2 },
-        { id: 8, imgsrc: ex1 },
-        { id: 9, imgsrc: ex2 },
-        { id: 10, imgsrc: ex1 },
-        { id: 11, imgsrc: ex3 },
-        { id: 12, imgsrc: ex2 },
-        { id: 13, imgsrc: ex2 },
-        { id: 14, imgsrc: ex1 },
-        { id: 15, imgsrc: ex2 },
-        { id: 16, imgsrc: ex1 },
-        { id: 17, imgsrc: ex3 },
-        { id: 18, imgsrc: ex2 },
-        { id: 19, imgsrc: ex2 }
-    ];
+    const imagesFolder = require.context('../../common/Images/gallery', false, /\.(png|jpg|jpeg|gif|svg|ico|JPEG|JPG|jpeg)$/);
+    const imageKeys = imagesFolder.keys();
 
     const openFullScreen = (src: string) => {
         setFullScreenSrc(src);
@@ -48,6 +33,11 @@ export const Gallery = () => {
         setFullScreenSrc("");
     };
 
+    const handleImageContextMenu = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
+        e.preventDefault();
+    };
+
+
     return (
         <>
             <Wrapper>
@@ -55,13 +45,18 @@ export const Gallery = () => {
                     <HeaderTitle>Galeria zdjęć</HeaderTitle>
                 </Header>
                 <GalleryWrapper>
-                    {data.map((img) => (
-                        <Pics key={img.id}>
-                            <Image src={img.imgsrc} onClick={() => openFullScreen(img.imgsrc)} />
+                    {imageKeys.map((imageKey) => (
+                        <Pics key={imageKey} >
+                            <Image
+                                onContextMenu={handleImageContextMenu}
+                                src={imagesFolder(imageKey) as string}
+                                onClick={() => openFullScreen(imageKey)} />
+
                         </Pics>
                     ))}
                 </GalleryWrapper>
             </Wrapper>
+
 
             {fullScreenSrc && (
                 <FullScreenWrapper
@@ -78,13 +73,14 @@ export const Gallery = () => {
                         loop={false}
                         navigation
                         grabCursor={true}
-                        initialSlide={data.findIndex((img) => img.imgsrc === fullScreenSrc)}
+                        initialSlide={imageKeys.findIndex((img) => img === fullScreenSrc)}
 
                     >
-                        {data.map((img) => (
-                            <CustomSlide key={img.id}>
+                        {imageKeys.map((imageKey) => (
+                            <CustomSlide key={imageKey}>
                                 <FullScreenImage
-                                    src={img.imgsrc}
+                                    onContextMenu={handleImageContextMenu}
+                                    src={imagesFolder(imageKey) as string}
                                     as={motion.img}
                                     initial={closeImage}
                                     animate={fullScreen ? openImage : closeImage}
@@ -102,4 +98,3 @@ export const Gallery = () => {
 
     );
 };
-
