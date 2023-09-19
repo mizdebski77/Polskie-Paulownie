@@ -11,7 +11,7 @@ export const Home = () => {
 
     return (
         <Wrapper>
-            <Header />
+            {/* <Header />
             <About />
             <AnimatedElement bottom>
                 <Title>Nasza oferta obejmuje:</Title>
@@ -21,7 +21,7 @@ export const Home = () => {
                 <Title>Galeria zdjęć:</Title>
             </AnimatedElement>
             <Gallery />
-            <Contact />
+            <Contact /> */}
         </Wrapper>
     );
 };

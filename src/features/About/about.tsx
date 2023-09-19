@@ -1,6 +1,6 @@
 import React from 'react';
 import { AboutText, Content, Header, HeaderTitle, Image, TextWrapper, Title, Wrapper } from './styledAbout';
-import circleImage from '../../common/Images/about/Untitled-1.png';
+import circleImage from './aboutImage.png';
 
 export const About = () => {
     return (
