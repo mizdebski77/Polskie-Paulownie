@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-import img1 from '../../../../common/Images/home/rolka/ROLKA_1.jpg';
-import img2 from '../../../../common/Images/home/rolka/ROLKA_3.jpg';
-import img4 from '../../../../common/Images/home/rolka/ROLKA_4.jpg';
-import img5 from '../../../../common/Images/home/rolka/ROLKA_5.jpg';
-import img6 from '../../../../common/Images/home/rolka/ROLKA_6.jpg';
-import img3 from '../../../../common/Images/home/rolka/ROLKA_7.jpg';
+import img1 from './Images/ROLKA_1.jpg';
+import img2 from './Images/ROLKA_10.jpg';
+import img3 from './Images/ROLKA_13.jpg';
+import img4 from './Images/ROLKA_3.jpg';
+import img5 from './Images/ROLKA_6.jpg';
+import img6 from './Images/ROLKA_8.jpg';
+
 
 import { Button, CloseButton, CustomSlide, CustomSwiper, FullScreenImage, FullScreenWrapper, GalleryImage, GalleryLink, ImagesWrapper, Pics, Wrapper } from './styledGallery';
 import { Navigation } from 'swiper/modules'
