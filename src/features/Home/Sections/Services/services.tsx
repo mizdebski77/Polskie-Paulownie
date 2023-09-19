@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContentWrapper, ServicesImage, ServicesText, ServicesTextWrapper, ServicesTitle, Wrapper } from './styledServices';
-import firstImg from '../../../../common/Images/home/3.jpg'
-import scndImg from '../../../../common/Images/home/4.jpg'
+import firstImg from './3.jpg'
+import scndImg from './4.jpg'
 import AnimatedElement from '../AnimatedElements';
 
 export const Services = () => {

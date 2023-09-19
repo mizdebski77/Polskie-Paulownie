@@ -1,7 +1,7 @@
 import React from 'react';
 import { AboutImage, AboutText, AboutTextWrapper, AboutTitle, ContentWrapper, Wrapper } from './styledAbout';
-import firstImg from '../../../../common/Images/home/1.jpg'
-import scndImg from '../../../../common/Images/home/2.jpg'
+import firstImg from './1.jpg'
+import scndImg from './2.jpg'
 import AnimatedElement from '../AnimatedElements';
 export const About = () => {
     return (
