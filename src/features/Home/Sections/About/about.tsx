@@ -1,6 +1,7 @@
 import React from 'react';
 import { AboutImage, AboutText, AboutTextWrapper, AboutTitle, ContentWrapper, Wrapper } from './styledAbout';
-import ex from '../../../../common/Images/Example/pinkex.png'
+import firstImg from '../../../../common/Images/home/1.jpg'
+import scndImg from '../../../../common/Images/home/2.jpg'
 import AnimatedElement from '../AnimatedElements';
 export const About = () => {
     return (
@@ -10,12 +11,12 @@ export const About = () => {
                     <AboutTitle>Lorem Ipsum</AboutTitle>
                     <AboutText> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo maxime repellendus rem fugit consequatur recusandae porro ipsa itaque esse, non repellat necessitatibus pariatur dolores cupiditate molestiae voluptas neque repudiandae officia.</AboutText>
                 </AboutTextWrapper>
-                <AboutImage src={ex} />
+                <AboutImage src={firstImg} />
             </ContentWrapper>
 
             <ContentWrapper reverse>
                 <AnimatedElement left>
-                    <AboutImage src={ex} />
+                    <AboutImage src={scndImg} />
                 </AnimatedElement>
                 <AnimatedElement>
                     <AboutTextWrapper>

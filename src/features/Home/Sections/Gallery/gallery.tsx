@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
-import ex1 from '../../../../common/Images/Example/header1.jpg'
-import ex2 from '../../../../common/Images/Example/header2.jpg'
+
+import img1 from '../../../../common/Images/home/rolka/ROLKA_1.jpg';
+import img2 from '../../../../common/Images/home/rolka/ROLKA_3.jpg';
+import img4 from '../../../../common/Images/home/rolka/ROLKA_4.jpg';
+import img5 from '../../../../common/Images/home/rolka/ROLKA_5.jpg';
+import img6 from '../../../../common/Images/home/rolka/ROLKA_6.jpg';
+import img3 from '../../../../common/Images/home/rolka/ROLKA_7.jpg';
+
 import { Button, CloseButton, CustomSlide, CustomSwiper, FullScreenImage, FullScreenWrapper, GalleryImage, GalleryLink, ImagesWrapper, Pics, Wrapper } from './styledGallery';
 import { Navigation } from 'swiper/modules'
 import 'swiper/css';
@@ -17,12 +23,12 @@ export const Gallery = () => {
 
 
     const data = [
-        { id: 1, imgsrc: ex1 },
-        { id: 2, imgsrc: ex2 },
-        { id: 7, imgsrc: ex2 },
-        { id: 8, imgsrc: ex1 },
-        { id: 9, imgsrc: ex2 },
-        { id: 10, imgsrc: ex1 },
+        { id: 1, imgsrc: img1 },
+        { id: 2, imgsrc: img2 },
+        { id: 7, imgsrc: img3 },
+        { id: 8, imgsrc: img4 },
+        { id: 9, imgsrc: img5 },
+        { id: 10, imgsrc: img6 },
     ];
 
     const openFullScreen = (src: string) => {

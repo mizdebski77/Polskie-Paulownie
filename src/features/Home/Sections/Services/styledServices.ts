@@ -60,8 +60,11 @@ export const ServicesText = styled.h3`
 `;
 
 export const ServicesImage = styled.img`
-    max-width: 320px;
+    max-width: 400px;
     margin: 0 auto;
+    border: 4px solid #0F7701;
+    border-radius: 4px;
+    box-shadow: 20px 20px 0px 0px #DDD;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         max-width: 200px;

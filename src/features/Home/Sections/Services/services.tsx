@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContentWrapper, ServicesImage, ServicesText, ServicesTextWrapper, ServicesTitle, Wrapper } from './styledServices';
-import ex from '../../../../common/Images/Example/tree.png';
+import firstImg from '../../../../common/Images/home/3.jpg'
+import scndImg from '../../../../common/Images/home/4.jpg'
 import AnimatedElement from '../AnimatedElements';
 
 export const Services = () => {
@@ -8,7 +9,7 @@ export const Services = () => {
         <Wrapper>
             <ContentWrapper>
                 <AnimatedElement left >
-                    <ServicesImage src={ex} />
+                    <ServicesImage src={firstImg} />
                 </AnimatedElement>
 
                 <AnimatedElement>
@@ -29,7 +30,7 @@ export const Services = () => {
                 </AnimatedElement>
 
                 <AnimatedElement>
-                    <ServicesImage src={ex} />
+                    <ServicesImage src={scndImg} />
                 </AnimatedElement>
             </ContentWrapper>
         </Wrapper>

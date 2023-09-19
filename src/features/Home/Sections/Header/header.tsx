@@ -1,7 +1,11 @@
 import React from 'react';
-import { Wrapper, HeaderImage, HeaderTitleWrapper, HeaderLink, HeaderButton, HeaderTitle,  CustomSlider } from './styledHeader';
+import { Wrapper, HeaderImage, HeaderTitleWrapper, HeaderLink, HeaderButton, HeaderTitle, CustomSlider } from './styledHeader';
 import ex1 from '../../../../common/Images/Example/header2.jpg.png';
-import ex2 from '../../../../common/Images/Example/XD.png';
+import ex2 from '../../../../common/Images/Example/header1.jpg.png';
+import ex3 from '../../../../common/Images/Example/header3.png';
+import ex4 from '../../../../common/Images/Example/header5.png';
+import ex5 from '../../../../common/Images/Example/header4.png';
+import ex6 from '../../../../common/Images/Example/header6.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export const Header = () => {
@@ -14,7 +18,7 @@ export const Header = () => {
         speed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        fade: true, 
+        fade: true,
         arrows: false
 
     };
@@ -31,6 +35,10 @@ export const Header = () => {
             <CustomSlider {...settings}>
                 <HeaderImage src={ex1} />
                 <HeaderImage src={ex2} />
+                <HeaderImage src={ex3} />
+                <HeaderImage src={ex4} />
+                <HeaderImage src={ex5} />
+                <HeaderImage src={ex6} />
             </CustomSlider>
 
 

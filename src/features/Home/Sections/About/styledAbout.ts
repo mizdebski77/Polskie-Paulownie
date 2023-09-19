@@ -73,10 +73,13 @@ export const AboutText = styled.h3`
 `;
 
 export const AboutImage = styled.img<{ reverse?: boolean }>`
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     width: 100%;
     animation: ${slideRight} 1s;
+    border: 4px solid #0F7701;
+    border-radius: 4px;
+    box-shadow: 20px 20px 0px 0px #DDD;
     
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         animation: ${slideBottom} 1s;
