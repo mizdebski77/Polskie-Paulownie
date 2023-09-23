@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ex from '../../common/Images/gallery/NAPIS_TŁO.jpg';
+import ex from './background.jpg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { opacitySlide, slideBottom } from "../../core/animations";
 

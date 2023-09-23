@@ -20,7 +20,7 @@ export const Home = () => {
             <AnimatedElement bottom>
                 <Title>Galeria zdjęć:</Title>
             </AnimatedElement>
-            {/* <Gallery /> */}
+            <Gallery />
             <Contact />
         </Wrapper>
     );
