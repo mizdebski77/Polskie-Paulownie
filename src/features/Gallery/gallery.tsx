@@ -19,20 +19,23 @@ export const Gallery = () => {
 
     const [fullScreen, setFullScreen] = useState<boolean>(false);
     const [fullScreenSrc, setFullScreenSrc] = useState<string>("");
+    const [currentImageIndex, setCurrentImageIndex] = useState(-1);
 
-    const imagesFolder = require.context('./Images', false, /\.(png|jpg|jpeg|gif|svg|ico|JPEG|JPG|jpeg)$/);
-    const smallImagesFolder = require.context('./Thumbnails', false, /\.(png|jpg|jpeg|gif|svg|ico|JPEG|JPG|jpeg)$/);
-    const imageKeys = imagesFolder.keys();
+
+    const smallImagesFolder = require.context('./Thumbnails', true, /\.jpg$/);
+    const largeImagesFolder = require.context('./Images', true, /\.jpg$/);
     const smallImageKeys = smallImagesFolder.keys();
+    const largeImageKeys = largeImagesFolder.keys();
 
-    const openFullScreen = (src: string) => {
-        setFullScreenSrc(src);  
+    const openFullScreen = (index: number) => {
+        setCurrentImageIndex(index);
+        setFullScreenSrc(largeImagesFolder(largeImageKeys[index]) as string);
         setFullScreen(true);
     };
 
     const closeFullScreen = () => {
         setFullScreen(false);
-        setFullScreenSrc("");
+        setCurrentImageIndex(-1);
     };
 
     const handleImageContextMenu = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
@@ -47,19 +50,18 @@ export const Gallery = () => {
                     <HeaderTitle>Galeria zdjęć</HeaderTitle>
                 </Header>
                 <GalleryWrapper>
-                    {smallImageKeys.map((smallImageKeys, index) => (
-                        <Pics key={smallImageKeys} >
+                    {smallImageKeys.map((imageKey, index) => (
+                        <Pics key={imageKey} >
                             <Image
-                                onContextMenu={handleImageContextMenu}
-                                src={imagesFolder(smallImageKeys) as string}
-                                onClick={() => openFullScreen(smallImageKeys)} />
+                                src={smallImagesFolder(imageKey) as string}
+                                onClick={() => openFullScreen(index)} />
                         </Pics>
                     ))}
                 </GalleryWrapper>
             </Wrapper>
 
 
-            {fullScreenSrc && (
+            {fullScreen && (
                 <FullScreenWrapper
                     as={motion.div}
                     initial={closeWrapper}
@@ -74,14 +76,13 @@ export const Gallery = () => {
                         loop={false}
                         navigation
                         grabCursor={true}
-                        initialSlide={imageKeys.findIndex((img) => img === fullScreenSrc)}
-
+                        initialSlide={currentImageIndex}
                     >
-                        {imageKeys.map((imageKey) => (
+                        {largeImageKeys.map((imageKey) => (
                             <CustomSlide key={imageKey}>
                                 <FullScreenImage
                                     onContextMenu={handleImageContextMenu}
-                                    src={imagesFolder(imageKey) as string}
+                                    src={largeImagesFolder(imageKey) as string}
                                     as={motion.img}
                                     initial={closeImage}
                                     animate={fullScreen ? openImage : closeImage}
