@@ -37,7 +37,7 @@ export const HeaderTitle = styled.h1`
     margin: 12px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
-        font-size: 44px;
+        font-size: 36px;
         margin: 10px;
     };
 

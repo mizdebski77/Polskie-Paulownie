@@ -34,7 +34,7 @@ export const ContactTitle = styled.span`
     font-weight: bold;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 24px;
+        font-size: 20px;
     };
 `;
 
@@ -72,7 +72,7 @@ export const Span = styled.span`
     font-size: 40px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 24px;
+        font-size: 20px;
     };
 `;
 

@@ -57,7 +57,7 @@ export const AboutTitle = styled.h2`
     margin: 0;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 28px;
+        font-size: 24px;
     };
 `;
 
@@ -68,7 +68,7 @@ export const AboutText = styled.h3`
     line-height: 1.2; 
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 20px;
+        font-size: 16px;
     };
 `;
 

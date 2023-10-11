@@ -14,16 +14,19 @@ declare const require: {
 };
 
 
+
 export const Gallery = () => {
 
     const [fullScreen, setFullScreen] = useState<boolean>(false);
     const [fullScreenSrc, setFullScreenSrc] = useState<string>("");
 
     const imagesFolder = require.context('./Images', false, /\.(png|jpg|jpeg|gif|svg|ico|JPEG|JPG|jpeg)$/);
+    const smallImagesFolder = require.context('./Thumbnails', false, /\.(png|jpg|jpeg|gif|svg|ico|JPEG|JPG|jpeg)$/);
     const imageKeys = imagesFolder.keys();
+    const smallImageKeys = smallImagesFolder.keys();
 
     const openFullScreen = (src: string) => {
-        setFullScreenSrc(src);
+        setFullScreenSrc(src);  
         setFullScreen(true);
     };
 
@@ -44,13 +47,12 @@ export const Gallery = () => {
                     <HeaderTitle>Galeria zdjęć</HeaderTitle>
                 </Header>
                 <GalleryWrapper>
-                    {imageKeys.map((imageKey) => (
-                        <Pics key={imageKey} >
+                    {smallImageKeys.map((smallImageKeys, index) => (
+                        <Pics key={smallImageKeys} >
                             <Image
                                 onContextMenu={handleImageContextMenu}
-                                src={imagesFolder(imageKey) as string}
-                                onClick={() => openFullScreen(imageKey)} />
-
+                                src={imagesFolder(smallImageKeys) as string}
+                                onClick={() => openFullScreen(smallImageKeys)} />
                         </Pics>
                     ))}
                 </GalleryWrapper>

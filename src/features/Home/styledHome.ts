@@ -15,7 +15,7 @@ export const Title = styled.header`
     color: ${({ theme }) => theme.color.secondColor};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 32px;
+        font-size: 28px;
     };  
 `;
 
