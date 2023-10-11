@@ -6,6 +6,7 @@ import { About } from "../features/About/about";
 import { Contact } from "../features/Contact/contact";
 import { Gallery } from "../features/Gallery/gallery";
 import { Cultivation } from "../features/Cultivation/cultivation";
+import { Offer } from "../features/Offer/offer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Strona-Główna" element={<Home />} />
         <Route path={"*"} element={<Navigate replace to="/Strona-Główna" />}> </Route>
         <Route path="/O-nas" element={<About />} />
+        <Route path="/Oferta" element={<Offer />} />
         <Route path="/Kontakt" element={<Contact />} />
         <Route path="/Galeria" element={<Gallery />} />
         <Route path="/Uprawa-paulowni" element={<Cultivation />} />

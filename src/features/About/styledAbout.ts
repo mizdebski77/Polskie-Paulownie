@@ -52,7 +52,8 @@ export const Content = styled.section`
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         display: flex;
         flex-direction: column-reverse;
-        padding: 12px;
+        padding: 12px 0;
+        gap: 20px;
     };
 `;
 
@@ -87,15 +88,15 @@ export const AboutText = styled.article`
     animation: ${slideBottom} 1s;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
     };
 `;
 
 export const Image = styled.img`
     max-width: 500px;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+
     border-radius: 50%;
     border: 6px solid #0F7701;
     box-shadow: 20px 20px 0px 0px #DDD;
@@ -103,7 +104,7 @@ export const Image = styled.img`
     margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        max-width: 20px;
+        max-width: 320px;
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){

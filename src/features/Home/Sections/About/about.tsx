@@ -3,6 +3,7 @@ import { AboutImage, AboutText, AboutTextWrapper, AboutTitle, ContentWrapper, Wr
 import firstImg from './1.jpg'
 import scndImg from './2.jpg'
 import AnimatedElement from '../AnimatedElements';
+
 export const About = () => {
     return (
         <Wrapper>

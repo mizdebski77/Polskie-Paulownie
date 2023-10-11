@@ -43,7 +43,6 @@ export const Gallery = () => {
     };
     return (
         <>
-
             <Wrapper>
                 <AnimatedElement gallery>
                     <ImagesWrapper>

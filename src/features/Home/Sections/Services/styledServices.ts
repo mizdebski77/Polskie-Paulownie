@@ -59,7 +59,7 @@ export const ServicesText = styled.h3`
     };
 `;
 
-export const ServicesImage = styled.img`
+export const ServicesImage = styled.img<{ tree?: boolean }>`
     max-width: 400px;
     margin: 0 auto;
     border: 4px solid #0F7701;
@@ -67,6 +67,13 @@ export const ServicesImage = styled.img`
     box-shadow: 20px 20px 0px 0px #DDD;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        max-width: 200px;
+        max-width: 240px;
     };
+
+    ${({ tree }) => tree && css`
+        max-width: 500px;
+        @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        max-width: 300px;
+    };
+    `};
 `;

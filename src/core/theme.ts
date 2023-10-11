@@ -6,8 +6,8 @@ export const theme = {
     },
 
     breakPoint: {
-        firstBreakPoint: 1260,
-        secondBreakPoint: 1100,
+        firstBreakPoint: 1380,
+        secondBreakPoint: 1200,
         mobileMax: 767,
     }
 };

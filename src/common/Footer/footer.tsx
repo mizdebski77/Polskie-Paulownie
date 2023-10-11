@@ -16,10 +16,11 @@ export const Footer = () => {
                 <Logo src={logo} />
             </LogoLink>
             <ContactWrapper>
-                <FooterTitle>Polskie Paulownie S.A:</FooterTitle>
-                <ContactElement>Adres: Jakaś tam</ContactElement>
-                <ContactElement>Telefon: 615236616</ContactElement>
-                <ContactElement>Nip: 81528153</ContactElement>
+                <FooterTitle>Polskie Paulownie</FooterTitle>
+                <ContactElement>Adres: ul. Kolejowa 105 43-178 Ornontowice</ContactElement>
+                <ContactElement>Telefon 1: 603 554 885</ContactElement>
+                <ContactElement>Telefon 2: 787 989 631</ContactElement>
+                <ContactElement>E-Mail: zbigniew.machulik@gmail.com </ContactElement>
             </ContactWrapper>
 
             <Socials>

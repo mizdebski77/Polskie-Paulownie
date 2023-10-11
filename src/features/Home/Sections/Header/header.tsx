@@ -23,7 +23,7 @@ export const Header = () => {
     return (
         <Wrapper>
             <HeaderTitleWrapper>
-                <HeaderTitle>Satysfakcja z uprawy Paulowni w polskich warunkach to nasze zadanie</HeaderTitle>
+                <HeaderTitle>Zadowolenie z uprawy Paulowni w polskich warunkach jest naszym priorytetem.</HeaderTitle>
                 <HeaderLink to="/O-nas">
                     <HeaderButton>Czytaj więcej</HeaderButton>
                 </HeaderLink>
