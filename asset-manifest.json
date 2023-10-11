@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Polskie-Paulownie/static/css/main.ac30d319.css",
-    "main.js": "/Polskie-Paulownie/static/js/main.53839a79.js",
+    "main.js": "/Polskie-Paulownie/static/js/main.37034ee2.js",
     "static/js/787.70f169b2.chunk.js": "/Polskie-Paulownie/static/js/787.70f169b2.chunk.js",
     "static/media/GALERIA_029.JPG": "/Polskie-Paulownie/static/media/GALERIA_029.1dbe206549860dcd8ce5.JPG",
     "static/media/ROLKA_15.png": "/Polskie-Paulownie/static/media/ROLKA_15.22fbbdb7bdb788d56b31.png",
@@ -47,12 +47,14 @@
     "static/media/ROLKA_1.jpg": "/Polskie-Paulownie/static/media/ROLKA_1.8a11ce6df6d93235abdc.jpg",
     "static/media/GALERIA_015.jpeg": "/Polskie-Paulownie/static/media/GALERIA_015.8d3e62cd284640616b9f.jpeg",
     "static/media/aboutImage.png": "/Polskie-Paulownie/static/media/aboutImage.d27acd225b6dc41f41ec.png",
+    "static/media/tree.png": "/Polskie-Paulownie/static/media/tree.d049e940ec9473d50cf9.png",
     "static/media/GALERIA_023.JPG": "/Polskie-Paulownie/static/media/GALERIA_023.9af4ca3b1b2cdb5c3f52.JPG",
     "static/media/GALERIA_007.JPG": "/Polskie-Paulownie/static/media/GALERIA_007.e3b44f843e875db5d161.JPG",
     "static/media/ROLKA_10.jpg": "/Polskie-Paulownie/static/media/ROLKA_10.a8f747a86b671e93b6ac.jpg",
     "static/media/Logo-paulownie.png": "/Polskie-Paulownie/static/media/Logo-paulownie.8665ccf9fefc33038d69.png",
     "static/media/Navabr.png": "/Polskie-Paulownie/static/media/Navabr.3efaf824765c41c4e074.png",
     "static/media/GALERIA_016.jpeg": "/Polskie-Paulownie/static/media/GALERIA_016.c367a6e50ffb7836e9c2.jpeg",
+    "static/media/sadzonka.png": "/Polskie-Paulownie/static/media/sadzonka.c9840fd86fcc1a644b8a.png",
     "static/media/4.jpg": "/Polskie-Paulownie/static/media/4.fdb7b2b3f90d04e5f888.jpg",
     "static/media/2.jpg": "/Polskie-Paulownie/static/media/2.29c4c31c485c278f7a19.jpg",
     "static/media/1.jpg": "/Polskie-Paulownie/static/media/1.26e875b37acbceb88398.jpg",
@@ -68,11 +70,11 @@
     "static/media/location.svg": "/Polskie-Paulownie/static/media/location.09386c4789b6ba75131f490197a87a7a.svg",
     "static/media/phone.svg": "/Polskie-Paulownie/static/media/phone.9bab0b2e984089b132868868d1ee64fd.svg",
     "main.ac30d319.css.map": "/Polskie-Paulownie/static/css/main.ac30d319.css.map",
-    "main.53839a79.js.map": "/Polskie-Paulownie/static/js/main.53839a79.js.map",
+    "main.37034ee2.js.map": "/Polskie-Paulownie/static/js/main.37034ee2.js.map",
     "787.70f169b2.chunk.js.map": "/Polskie-Paulownie/static/js/787.70f169b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac30d319.css",
-    "static/js/main.53839a79.js"
+    "static/js/main.37034ee2.js"
   ]
 }
