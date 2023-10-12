@@ -24,7 +24,7 @@ export const Contact = () => {
                             <SVGLink href='https://www.facebook.com/profile.php?id=100067548942538' target='blank' >
                                 <SVGIcon src={facebook} />
                             </SVGLink>
-                            <SVGLink href="mailto: zbigniew.machulik@gmail.com">
+                            <SVGLink href="mailto: polskie.paulownie@gmail.com">
                                 <SVGIcon src={mail} />
                             </SVGLink>
                             <SVGLink href="tel:603554885">

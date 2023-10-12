@@ -93,6 +93,10 @@ export const AboutText = styled.article`
     };
 `;
 
+export const NewLine = styled.p`
+    margin: 0;
+`;
+
 export const Image = styled.img`
     max-width: 500px;
     width: 100%;

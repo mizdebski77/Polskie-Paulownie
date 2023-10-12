@@ -177,3 +177,66 @@ export const AnimatedTileWrapper = styled.div`
         transform: translateY(10%);
     };
 `;
+
+export const TablesWrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        grid-template-columns: 1fr;
+    };
+`;
+
+export const TableWrapper = styled.div`
+    display: grid;
+    gap: 20px;
+`;
+
+export const Caption = styled.span`
+    color: ${({ theme }) => theme.color.secondColor};
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 24px;
+    };
+`;
+
+export const Table = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  caption-side: bottom;
+  font-size: 24px;
+  border: 1px solid ${({ theme }) => theme.color.secondColor};
+
+  @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        font-size: 16px;
+        padding: 8px;
+    };
+`;
+
+export const THead = styled.thead`
+  background-color: #ccc;
+`;
+
+export const TBody = styled.tbody`
+    
+`;
+
+export const TH = styled.th`
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #4f4f4f;
+  border-right: 1px solid #4f4f4f; 
+
+`;
+
+export const TD = styled.td`
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #4f4f4f;
+  border-right: 1px solid #4f4f4f; 
+
+`;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Content, Header, HeaderTitle, Image, MainText, Span, TextWrapper, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper } from './styledOffer';
+import { Content, Header, HeaderTitle, Image, MainText, Span, TD, THead, TH, Table, TextWrapper, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper, TBody, TablesWrapper, TableWrapper, Caption } from './styledOffer';
 import ex from '../../common/Images/Example/bee.png';
 import AnimatedTile from './AnimatedTile';
 import seedling from './sadzonka.png';
@@ -36,6 +36,82 @@ export const Offer = () => {
                                     Nasze drzewa Paulowni są dostępne w różnych wysokościach od 1,5 m do 4,5 m i stanowią doskonałą inwestycję w przyszłość oraz ochronę środowiska. Odmiana Shang Tong jest łatwa w uprawie, a główną korzyścią płynącą z zakupu drzewa jest szybsze uzyskanie zysków w porównaniu do sadzonki. Nasza oferta to wyjątkowa okazja do zaangażowania się w dbanie o środowisko i wsparcie lokalnej produkcji. Wybierając drzewa Paulowni, podejmujesz decyzję na rzecz przyszłości i dobra naszej planety.                                </TileText>
                             </TileTextWrapper>
                         </Tile>
+                    </AnimatedTile>
+                    <AnimatedTile>
+
+                        <TablesWrapper>
+                            <TableWrapper>
+                                <Caption>Cena drzewa według wysokości</Caption>
+                                <Table>
+                                    <THead>
+                                        <tr>
+                                            <TH>Od</TH>
+                                            <TH>Do</TH>
+                                            <TH>Cena za sztukę</TH>
+                                        </tr>
+                                    </THead>
+                                    <TBody>
+                                        <tr>
+                                            <TD>50 cm</TD>
+                                            <TD>100 cm</TD>
+                                            <TD>70 zł</TD>
+                                        </tr>
+                                        <tr>
+                                            <TD>100 cm</TD>
+                                            <TD>150 cm</TD>
+                                            <TD>100 zł</TD>
+                                        </tr>
+                                        <tr>
+                                            <TD>150 cm</TD>
+                                            <TD>200 cm</TD>
+                                            <TD>150 zł</TD>
+                                        </tr>
+                                        <tr>
+                                            <TD>200 cm</TD>
+                                            <TD></TD>
+                                            <TD>cena indywidualna</TD>
+                                        </tr>
+                                    </TBody>
+                                </Table>
+                            </TableWrapper>
+
+                            <TableWrapper>
+                                <Caption>Cena sadzonki według ilości</Caption>
+                                <Table>
+
+                                    <THead>
+                                        <tr>
+                                            <TH>Od</TH>
+                                            <TH>Do</TH>
+                                            <TH>Cena za sztukę</TH>
+                                        </tr>
+                                    </THead>
+                                    <TBody>
+                                        <tr>
+                                            <TD>1</TD>
+                                            <TD>20</TD>
+                                            <TD>40 zł</TD>
+                                        </tr>
+                                        <tr>
+                                            <TD>21</TD>
+                                            <TD>100</TD>
+                                            <TD>35 zł</TD>
+                                        </tr>
+                                        <tr>
+                                            <TD>101</TD>
+                                            <TD>1000</TD>
+                                            <TD>30 zł</TD>
+                                        </tr>
+                                        <tr>
+                                            <TD>1001</TD>
+                                            <TD></TD>
+                                            <TD>cena indywidualna</TD>
+                                        </tr>
+                                    </TBody>
+                                </Table>
+                            </TableWrapper>
+
+                        </TablesWrapper>
                     </AnimatedTile>
                 </TileWrapper>
             </Content>

@@ -30,7 +30,7 @@ export const Contact = () => {
                     <LinksWrapper>
                         <TextField>
                             <SVGIcon src={phone} />
-                            <Link href="tel:603554885">603554885</Link>
+                            <Link href="tel:603554885"> 603 554 885</Link>
                         </TextField>
                         <TextField>
                             <SVGIcon src={facebook} />
@@ -38,11 +38,11 @@ export const Contact = () => {
                         </TextField>
                         <TextField>
                             <SVGIcon src={mail} />
-                            <Link href="mailto: zbigniew.machulik@gmail.com" >polskiepaulowni@gmail.com</Link>
+                            <Link href="mailto: polskie.paulownie@gmail.com" >polskiepaulowni@gmail.com</Link>
                         </TextField>
                         <TextField>
                             <SVGIcon src={adress} />
-                            <Link target='blank' href='https://www.google.com/maps/place/Kolejowa+105,+43-178+Ornontowice,+Polska/@50.190847,18.762246,13z/data=!4m6!3m5!1s0x4711351f2697d1eb:0x28170e0e39f5a940!8m2!3d50.1908466!4d18.7622456!16s%2Fg%2F11c1z68rz6?hl=pl-PL&entry=ttu'>Ul. Jakaś tam 32/62</Link>
+                            <Link target='blank' href='https://www.google.com/maps/place/Kolejowa+105,+43-178+Ornontowice,+Polska/@50.190847,18.762246,13z/data=!4m6!3m5!1s0x4711351f2697d1eb:0x28170e0e39f5a940!8m2!3d50.1908466!4d18.7622456!16s%2Fg%2F11c1z68rz6?hl=pl-PL&entry=ttu'>Ul. Kolejowa 105 Ornontowice</Link>
                         </TextField>
                     </LinksWrapper>
                 </LinkContainer>

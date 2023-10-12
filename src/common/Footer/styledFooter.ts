@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Wrapper = styled.footer`
@@ -8,7 +8,7 @@ export const Wrapper = styled.footer`
     justify-content: space-around;
     padding: 20px;
     min-height: 320px;
-    background: ${({theme}) => theme.color.secondColor};
+    background: ${({ theme }) => theme.color.secondColor};
     color: white;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
@@ -65,6 +65,10 @@ export const ContactElement = styled.p`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 16px;
     };
+`;
+
+export const Hidden = styled.span`
+    visibility: hidden;
 `;
 
 export const Socials = styled.div`

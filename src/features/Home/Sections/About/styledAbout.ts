@@ -83,6 +83,7 @@ export const AboutImage = styled.img<{ reverse?: boolean }>`
     
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         animation: ${slideBottom} 1s;
+        max-width: 240px;
     };
 
     ${({ reverse }) => reverse && css`
