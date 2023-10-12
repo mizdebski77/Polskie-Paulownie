@@ -1,6 +1,5 @@
 import React from 'react';
-import { Content, Header, HeaderTitle, Image, MainText, Span, TD, THead, TH, Table, TextWrapper, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper, TBody, TablesWrapper, TableWrapper, Caption } from './styledOffer';
-import ex from '../../common/Images/Example/bee.png';
+import { Content, Header, HeaderTitle, Image,  TD, THead, TH, Table,  Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper, TBody, TablesWrapper, TableWrapper, Caption } from './styledOffer';
 import AnimatedTile from './AnimatedTile';
 import seedling from './sadzonka.png';
 import tree from './tree.png';
