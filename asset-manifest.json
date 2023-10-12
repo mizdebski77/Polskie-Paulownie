@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Polskie-Paulownie/static/css/main.ac30d319.css",
-    "main.js": "/Polskie-Paulownie/static/js/main.9e34df47.js",
+    "main.js": "/Polskie-Paulownie/static/js/main.410cecaf.js",
     "static/js/787.70f169b2.chunk.js": "/Polskie-Paulownie/static/js/787.70f169b2.chunk.js",
     "static/media/ROLKA_15.png": "/Polskie-Paulownie/static/media/ROLKA_15.22fbbdb7bdb788d56b31.png",
     "static/media/GALERIA_029.jpg": "/Polskie-Paulownie/static/media/GALERIA_029.97f2d246dd6dd545c080.jpg",
@@ -29,7 +29,7 @@
     "static/media/GALERIA_030.jpg": "/Polskie-Paulownie/static/media/GALERIA_030.781171b93cea08394746.jpg",
     "static/media/ROLKA_3.jpg": "/Polskie-Paulownie/static/media/ROLKA_3.44fa673ed6561e4bb35d.jpg",
     "static/media/ROLKA_6.jpg": "/Polskie-Paulownie/static/media/ROLKA_6.b4b1256e7db8fb221f3b.jpg",
-    "static/media/background.jpg": "/Polskie-Paulownie/static/media/background.293bd56e5a59fa52c97e.jpg",
+    "static/media/background.jpg": "/Polskie-Paulownie/static/media/background.97f1ec08252443ac2497.jpg",
     "static/media/GALERIA_028.jpg": "/Polskie-Paulownie/static/media/GALERIA_028.d1d141488e8890e49f48.jpg",
     "static/media/GALERIA_003.jpg": "/Polskie-Paulownie/static/media/GALERIA_003.4d4c4037ce3a451d1245.jpg",
     "static/media/GALERIA_021.jpg": "/Polskie-Paulownie/static/media/GALERIA_021.af703d7cfa6899c44165.jpg",
@@ -66,11 +66,11 @@
     "static/media/location.svg": "/Polskie-Paulownie/static/media/location.09386c4789b6ba75131f490197a87a7a.svg",
     "static/media/phone.svg": "/Polskie-Paulownie/static/media/phone.9bab0b2e984089b132868868d1ee64fd.svg",
     "main.ac30d319.css.map": "/Polskie-Paulownie/static/css/main.ac30d319.css.map",
-    "main.9e34df47.js.map": "/Polskie-Paulownie/static/js/main.9e34df47.js.map",
+    "main.410cecaf.js.map": "/Polskie-Paulownie/static/js/main.410cecaf.js.map",
     "787.70f169b2.chunk.js.map": "/Polskie-Paulownie/static/js/787.70f169b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac30d319.css",
-    "static/js/main.9e34df47.js"
+    "static/js/main.410cecaf.js"
   ]
 }
