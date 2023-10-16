@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Polskie-Paulownie/static/css/main.ac30d319.css",
-    "main.js": "/Polskie-Paulownie/static/js/main.52e24546.js",
+    "main.js": "/Polskie-Paulownie/static/js/main.61df373f.js",
     "static/js/787.70f169b2.chunk.js": "/Polskie-Paulownie/static/js/787.70f169b2.chunk.js",
     "static/media/ROLKA_15.png": "/Polskie-Paulownie/static/media/ROLKA_15.22fbbdb7bdb788d56b31.png",
     "static/media/GALERIA_029.jpg": "/Polskie-Paulownie/static/media/GALERIA_029.97f2d246dd6dd545c080.jpg",
@@ -67,11 +67,11 @@
     "static/media/location.svg": "/Polskie-Paulownie/static/media/location.09386c4789b6ba75131f490197a87a7a.svg",
     "static/media/phone.svg": "/Polskie-Paulownie/static/media/phone.9bab0b2e984089b132868868d1ee64fd.svg",
     "main.ac30d319.css.map": "/Polskie-Paulownie/static/css/main.ac30d319.css.map",
-    "main.52e24546.js.map": "/Polskie-Paulownie/static/js/main.52e24546.js.map",
+    "main.61df373f.js.map": "/Polskie-Paulownie/static/js/main.61df373f.js.map",
     "787.70f169b2.chunk.js.map": "/Polskie-Paulownie/static/js/787.70f169b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac30d319.css",
-    "static/js/main.52e24546.js"
+    "static/js/main.61df373f.js"
   ]
 }
