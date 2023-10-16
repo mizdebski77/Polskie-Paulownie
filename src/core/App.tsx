@@ -7,6 +7,7 @@ import { Contact } from "../features/Contact/contact";
 import { Gallery } from "../features/Gallery/gallery";
 import { Cultivation } from "../features/Cultivation/cultivation";
 import { Offer } from "../features/Offer/offer";
+import { Calculator } from "../features/Offer/Calculator/calculator";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/Kontakt" element={<Contact />} />
         <Route path="/Galeria" element={<Gallery />} />
         <Route path="/Uprawa-paulowni" element={<Cultivation />} />
-
+        <Route path="Kalkulator" element={<Calculator />} />
       </Routes>
       <Footer />
     </BrowserRouter>
