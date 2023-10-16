@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Polskie-Paulownie/static/css/main.ac30d319.css",
-    "main.js": "/Polskie-Paulownie/static/js/main.410cecaf.js",
+    "main.js": "/Polskie-Paulownie/static/js/main.52e24546.js",
     "static/js/787.70f169b2.chunk.js": "/Polskie-Paulownie/static/js/787.70f169b2.chunk.js",
     "static/media/ROLKA_15.png": "/Polskie-Paulownie/static/media/ROLKA_15.22fbbdb7bdb788d56b31.png",
     "static/media/GALERIA_029.jpg": "/Polskie-Paulownie/static/media/GALERIA_029.97f2d246dd6dd545c080.jpg",
@@ -56,6 +56,7 @@
     "static/media/1.jpg": "/Polskie-Paulownie/static/media/1.26e875b37acbceb88398.jpg",
     "static/media/bee.png": "/Polskie-Paulownie/static/media/bee.51cff2a6417e24bedd85.png",
     "static/media/3.jpg": "/Polskie-Paulownie/static/media/3.441c0089c779801e7272.jpg",
+    "static/media/img.jpg": "/Polskie-Paulownie/static/media/img.2878e3c5fb14ecf4ce05.jpg",
     "static/media/slick.svg": "/Polskie-Paulownie/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Polskie-Paulownie/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Polskie-Paulownie/static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -66,11 +67,11 @@
     "static/media/location.svg": "/Polskie-Paulownie/static/media/location.09386c4789b6ba75131f490197a87a7a.svg",
     "static/media/phone.svg": "/Polskie-Paulownie/static/media/phone.9bab0b2e984089b132868868d1ee64fd.svg",
     "main.ac30d319.css.map": "/Polskie-Paulownie/static/css/main.ac30d319.css.map",
-    "main.410cecaf.js.map": "/Polskie-Paulownie/static/js/main.410cecaf.js.map",
+    "main.52e24546.js.map": "/Polskie-Paulownie/static/js/main.52e24546.js.map",
     "787.70f169b2.chunk.js.map": "/Polskie-Paulownie/static/js/787.70f169b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac30d319.css",
-    "static/js/main.410cecaf.js"
+    "static/js/main.52e24546.js"
   ]
 }
