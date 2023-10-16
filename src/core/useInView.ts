@@ -2,7 +2,7 @@
 import { useInView } from 'react-intersection-observer';
 
 export function calculateRootMargin() {
-    return '0px 0px -50% 0px';
+    return '0px 0px -10% 0px';
 };
 
 export function useInViewAnimation() {

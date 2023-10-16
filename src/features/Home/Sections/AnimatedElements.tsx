@@ -22,7 +22,7 @@ const AnimatedElement: React.FC<AnimatedElementProps> = ({ children, left, botto
         if (screenWidth < 768) {
             return '0px 0px -20% 0px';
         } else {
-            return '0px 0px -30% 0px';
+            return '0px 0px -10% 0px';
         }
     }
 

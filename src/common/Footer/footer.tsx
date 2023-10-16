@@ -18,8 +18,8 @@ export const Footer = () => {
             <ContactWrapper>
                 <FooterTitle>Polskie Paulownie</FooterTitle>
                 <ContactElement>Adres: ul. Kolejowa 105 43-178 Ornontowice</ContactElement>
-                <ContactElement>Telefon: 603 554 885</ContactElement>
-                <ContactElement><Hidden>Telefon:</Hidden>  787 989 631</ContactElement>
+                <ContactElement>Telefon: +48 603 554 885</ContactElement>
+                <ContactElement><Hidden>Telefon:</Hidden> + 48 787 989 631</ContactElement>
                 <ContactElement>E-Mail: polskie.paulownie@gmail.com </ContactElement>
             </ContactWrapper>
 

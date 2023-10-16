@@ -41,11 +41,11 @@ export const ContentWrapper = styled.div <{ reverse?: boolean }>`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 20px;
 
         ${({ reverse }) => reverse && css`
-            flex-direction: column-reverse;
+            flex-direction: column;
         `};
     };
 `;
