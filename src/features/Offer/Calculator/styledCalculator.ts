@@ -77,6 +77,7 @@ export const Caption = styled.span`
 
 export const Paragraph = styled.p`
     margin: 0;
+    font-size: 16px;
 `;
 
 export const Input = styled.input`
@@ -90,7 +91,38 @@ export const Input = styled.input`
     };
 `;
 
-export const Button = styled.button`
+export const ButtonsWrapper = styled.div`
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+`;
+
+export const ClearButton = styled.button`
+    padding: 10px 64px;
+    margin: 0 auto;
+    font-size: 20px;
+    cursor: pointer;
+    background: ${({ theme }) => theme.color.secondColor};
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.02);
+    };
+
+    &:disabled {
+        background: gray;
+        &:hover {
+        transform: scale(1);
+        cursor: no-drop;
+    };
+
+    }
+`;
+
+export const CountButton = styled.button`
     padding: 10px 64px;
     margin: 0 auto;
     font-size: 20px;

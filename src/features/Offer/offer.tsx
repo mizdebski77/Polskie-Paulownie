@@ -111,7 +111,7 @@ export const Offer = () => {
                                 </Table>
                             </TableWrapper>
                         </TablesWrapper>
-                            <CalcLink to="/Kalkulator" >Zaplanuj swoją plantacje</CalcLink>
+                        <CalcLink to="/Kalkulator" onClick={() => window.scrollTo(0, 0)} >Zaplanuj swoją plantacje</CalcLink>
                     </AnimatedTile>
                 </TileWrapper>
             </Content>
