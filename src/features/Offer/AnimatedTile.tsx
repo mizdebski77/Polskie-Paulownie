@@ -20,7 +20,7 @@ const AnimatedTile: React.FC<AnimatedTileProps> = ({ children }) => {
         if (screenWidth < 768) {
             return '0px 0px -20% 0px';
         } else {
-            return '0px 0px -10% 0px';
+            return '0px 0px -5% 0px';
         }
     };
 

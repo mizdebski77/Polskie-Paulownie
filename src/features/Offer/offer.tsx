@@ -1,5 +1,5 @@
 import React from 'react';
-import { Content, Header, HeaderTitle, Image,  TD, THead, TH, Table,  Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper, TBody, TablesWrapper, TableWrapper, Caption } from './styledOffer';
+import { Content, Header, HeaderTitle, Image, TD, THead, TH, Table, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper, TBody, TablesWrapper, TableWrapper, Caption, Title } from './styledOffer';
 import AnimatedTile from './AnimatedTile';
 import seedling from './sadzonka.png';
 import tree from './tree.png';
@@ -38,6 +38,7 @@ export const Offer = () => {
                     </AnimatedTile>
                     <AnimatedTile>
 
+                        <Title>Cennik</Title>
                         <TablesWrapper>
                             <TableWrapper>
                                 <Caption>Cena drzewa według wysokości</Caption>

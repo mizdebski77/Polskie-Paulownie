@@ -86,6 +86,7 @@ export const AboutText = styled.article`
     line-height: 1.2; 
     font-size: 24px;
     animation: ${slideBottom} 1s;
+    text-indent: 30px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 16px;

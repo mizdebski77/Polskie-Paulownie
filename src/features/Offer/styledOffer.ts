@@ -178,6 +178,13 @@ export const AnimatedTileWrapper = styled.div`
     };
 `;
 
+export const Title = styled.h3`
+        text-align: center;
+        font-size: 52px;
+        margin: 10px 0px 40px;
+        color: ${({ theme }) => theme.color.secondColor};
+`;
+
 export const TablesWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -197,7 +204,7 @@ export const Caption = styled.span`
     color: ${({ theme }) => theme.color.secondColor};
     font-size: 32px;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 24px;

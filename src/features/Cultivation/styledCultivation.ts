@@ -110,13 +110,18 @@ export const Tile = styled.div <{ left?: boolean }>`
     border-radius: 10px;
     animation: ${slideLeft} 1s;
 
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        display:flex;
+        flex-direction:column-reverse
+    };
+
     ${({ left }) => left && css`
         grid-template-columns: 1fr 2fr;
         animation: ${slideRight} 1s;
 
         @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
         };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
@@ -124,11 +129,7 @@ export const Tile = styled.div <{ left?: boolean }>`
     };
     `};
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        grid-template-columns:1fr;
-        padding:12px;
-        gap:20px;
-    };
+
 `;
 
 export const TileTextWrapper = styled.div`

@@ -14,26 +14,13 @@ export const Cultivation = () => {
 
                 <TextWrapper>
                     <MainText>
-                        Chcemy się z Państwem podzielić naszym doświadczeniem w poniższych zakresach:
+                        Chcemy się z Państwem podzielić naszym doświadczeniem w poniższych dziedzinach:
                     </MainText>
                 </TextWrapper>
 
                 <TileWrapper>
 
-                    <Tile>
-                        <TileTextWrapper>
-                            <TileTitle>
-                                Pszczelarstwo
-                            </TileTitle>
-                            <TileText>
-                                Roślina należy do gatunku roślin C4 – miododajnych. Od końca kwietnia, przez 5 tygodni, kwitnie w koszykach kwiatowych o wysokości do 60 cm. Z końcem maja kwiaty schną i pojawiają się liście. Najbardziej znana jest jako paulownia puszysta, ale można ją spotkać także pod nazwą: cesarska lub omszona. Wieczorem, gdy pszczoły już nie pracują, słychać jeszcze gwar trzmieli, które zbierają spadź. Z racji, że liście są lepkie, nie spotykamy pod tymi drzewami mszyc, komarów, muszek – chyba boją się, że się przykleją.
-                                W Moszczanicy obok Żywca wraz z uczniami klasy pszczelarskiej możemy obserwować cały rok jak pszczoły współpracują z paulowniami.
-                            </TileText>
-                        </TileTextWrapper>
-                        <Image src={ex} />
-                    </Tile>
                     <AnimatedTile>
-
                         <Tile left>
                             <Image src={ex} />
                             <TileTextWrapper>
@@ -45,8 +32,8 @@ export const Cultivation = () => {
                             </TileTextWrapper>
                         </Tile>
                     </AnimatedTile>
-                    <AnimatedTile>
 
+                    <AnimatedTile>
                         <Tile>
                             <TileTextWrapper>
                                 <TileTitle>
@@ -58,62 +45,8 @@ export const Cultivation = () => {
                             <Image src={ex} />
                         </Tile>
                     </AnimatedTile>
-                    <AnimatedTile>
-
-                        <Tile left>
-                            <Image src={ex} />
-                            <TileTextWrapper>
-                                <TileTitle>
-                                    Rekultywacja Terenów
-                                </TileTitle>
-                                <TileText>
-                                    Drzewa Paulowni stanowią doskonałą opcję dla rekultywacji terenów, które uległy degradacji na skutek wydobycia surowców naturalnych lub innych działalności przemysłowych. Ich szybki wzrost i zdolność do dostosowywania się do różnych warunków klimatycznych i glebowych sprawiają, że są idealnym wyborem. Korzenie Paulowni pomagają w stabilizacji gruntów i zapobiegają erozji. W wyniku tego procesu, tereny, które kiedyś były nieużyteczne, stają się przyjazne dla przyrody, co przyczynia się do odbudowy ekosystemów i przywracania naturalnej równowagi.                                </TileText>
-                            </TileTextWrapper>
-                        </Tile>
-                    </AnimatedTile>
 
                     <AnimatedTile>
-
-                        <Tile>
-                            <TileTextWrapper>
-                                <TileTitle>
-                                    Hodowla Zwierząt
-                                </TileTitle>
-                                <TileText>
-                                    Drzewa Paulowni oferują cenny cień i schronienie dla zwierząt hodowlanych w okresach gorących letnich miesięcy. To gatunek drzewa, który rośnie gęsto i zapewnia przyjemne warunki do wypasu i wypasu zwierząt. Dla rolników, którzy dbają o swoje stada, Paulownia stanowi naturalny sposób na utrzymanie zwierząt w komfortowych warunkach i poprawienie ich samopoczucia.      </TileText>
-                            </TileTextWrapper>
-                            <Image src={ex} />
-                        </Tile>
-                    </AnimatedTile>
-                    <AnimatedTile>
-
-                        <Tile left>
-                            <Image src={ex} />
-                            <TileTextWrapper>
-                                <TileTitle>
-                                    Sadzenie dla Krajobrazu Miejskiego
-                                </TileTitle>
-                                <TileText>
-                                    Paulownia jest doskonałym dodatkiem do miejskich krajobrazów, który przynosi nie tylko estetyczne korzyści, ale także wpływa na jakość powietrza w obszarach miejskich. Jej piękne, fioletowe kwiaty i dekoracyjne liście czynią ją atrakcyjnym drzewem dla miejskich ogrodów i parków. Ponadto, drzewa te przyczyniają się do oczyszczania powietrza z zanieczyszczeń i dostarczają cennego cienia w cieplejszych miesiącach.     </TileText>
-                            </TileTextWrapper>
-                        </Tile>
-                    </AnimatedTile>
-
-                    <AnimatedTile>
-
-                        <Tile>
-                            <TileTextWrapper>
-                                <TileTitle>
-                                    Badania Naukowe
-                                </TileTitle>
-                                <TileText>
-                                    Paulownia jest przedmiotem licznych badań naukowych związanym z jej uprawą, właściwościami drewna i wpływem na środowisko. Badacze interesują się szczególnie potencjałem tych drzew do sekwestroacji dwutlenku węgla, produkcji biomasy, oraz jako źródła biomasy dla celów energetycznych i przemysłowych. Dzięki swojemu szybkiemu wzrostowi i wszechstronności, Paulownia przyciąga uwagę naukowców dążących do zrównoważonego rozwoju.  </TileText>
-                            </TileTextWrapper>
-                            <Image src={ex} />
-                        </Tile>
-                    </AnimatedTile>
-                    <AnimatedTile>
-
                         <Tile left>
                             <Image src={ex} />
                             <TileTextWrapper>
@@ -125,6 +58,75 @@ export const Cultivation = () => {
                             </TileTextWrapper>
                         </Tile>
                     </AnimatedTile>
+
+                    <AnimatedTile>
+                        <Tile >
+                            <TileTextWrapper>
+                                <TileTitle>
+                                    Rekultywacja Terenów
+                                </TileTitle>
+                                <TileText>
+                                    Drzewa Paulowni stanowią doskonałą opcję dla rekultywacji terenów, które uległy degradacji na skutek wydobycia surowców naturalnych lub innych działalności przemysłowych. Ich szybki wzrost i zdolność do dostosowywania się do różnych warunków klimatycznych i glebowych sprawiają, że są idealnym wyborem. Korzenie Paulowni pomagają w stabilizacji gruntów i zapobiegają erozji. W wyniku tego procesu, tereny, które kiedyś były nieużyteczne, stają się przyjazne dla przyrody, co przyczynia się do odbudowy ekosystemów i przywracania naturalnej równowagi.                                </TileText>
+                            </TileTextWrapper>
+                            <Image src={ex} />
+
+                        </Tile>
+                    </AnimatedTile>
+
+                    <AnimatedTile>
+                        <Tile left>
+                            <Image src={ex} />
+                            <TileTextWrapper>
+                                <TileTitle>
+                                    Pszczelarstwo
+                                </TileTitle>
+                                <TileText>
+                                    Roślina należy do gatunku roślin C4 – miododajnych. Od końca kwietnia, przez 5 tygodni, kwitnie w koszykach kwiatowych o wysokości do 60 cm. Z końcem maja kwiaty schną i pojawiają się liście. Najbardziej znana jest jako paulownia puszysta, ale można ją spotkać także pod nazwą: cesarska lub omszona. Wieczorem, gdy pszczoły już nie pracują, słychać jeszcze gwar trzmieli, które zbierają spadź. Z racji, że liście są lepkie, nie spotykamy pod tymi drzewami mszyc, komarów, muszek – chyba boją się, że się przykleją.
+                                    W Moszczanicy obok Żywca wraz z uczniami klasy pszczelarskiej możemy obserwować cały rok jak pszczoły współpracują z paulowniami.
+                                </TileText>
+                            </TileTextWrapper>
+                        </Tile>
+                    </AnimatedTile>
+
+                    <AnimatedTile>
+                        <Tile >
+                            <TileTextWrapper>
+                                <TileTitle>
+                                    Sadzenie dla Krajobrazu Miejskiego
+                                </TileTitle>
+                                <TileText>
+                                    Paulownia jest doskonałym dodatkiem do miejskich krajobrazów, który przynosi nie tylko estetyczne korzyści, ale także wpływa na jakość powietrza w obszarach miejskich. Jej piękne, fioletowe kwiaty i dekoracyjne liście czynią ją atrakcyjnym drzewem dla miejskich ogrodów i parków. Ponadto, drzewa te przyczyniają się do oczyszczania powietrza z zanieczyszczeń i dostarczają cennego cienia w cieplejszych miesiącach.     </TileText>
+                            </TileTextWrapper>
+                            <Image src={ex} />
+                        </Tile>
+                    </AnimatedTile>
+
+                    <AnimatedTile>
+                        <Tile left>
+                            <Image src={ex} />
+                            <TileTextWrapper>
+                                <TileTitle>
+                                    Hodowla Zwierząt
+                                </TileTitle>
+                                <TileText>
+                                    Drzewa Paulowni oferują cenny cień i schronienie dla zwierząt hodowlanych w okresach gorących letnich miesięcy. To gatunek drzewa, który rośnie gęsto i zapewnia przyjemne warunki do wypasu i wypasu zwierząt. Dla rolników, którzy dbają o swoje stada, Paulownia stanowi naturalny sposób na utrzymanie zwierząt w komfortowych warunkach i poprawienie ich samopoczucia.      </TileText>
+                            </TileTextWrapper>
+                        </Tile>
+                    </AnimatedTile>
+
+                    <AnimatedTile>
+                        <Tile>
+                            <TileTextWrapper>
+                                <TileTitle>
+                                    Badania Naukowe
+                                </TileTitle>
+                                <TileText>
+                                    Paulownia jest przedmiotem licznych badań naukowych związanym z jej uprawą, właściwościami drewna i wpływem na środowisko. Badacze interesują się szczególnie potencjałem tych drzew do sekwestroacji dwutlenku węgla, produkcji biomasy, oraz jako źródła biomasy dla celów energetycznych i przemysłowych. Dzięki swojemu szybkiemu wzrostowi i wszechstronności, Paulownia przyciąga uwagę naukowców dążących do zrównoważonego rozwoju.  </TileText>
+                            </TileTextWrapper>
+                            <Image src={ex} />
+                        </Tile>
+                    </AnimatedTile>
+
 
                 </TileWrapper>
             </Content>
