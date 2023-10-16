@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import background from './background.jpg';
 import { opacitySlide, slideBottom, slideLeft, slideRight } from "../../core/animations";
+import { Link } from "react-router-dom";
 
 export const Wrapper = styled.div`
     min-height: 100vh;
@@ -189,6 +190,7 @@ export const TablesWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    margin-bottom: 40px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         grid-template-columns: 1fr;
@@ -246,4 +248,22 @@ export const TD = styled.td`
   border-bottom: 1px solid #4f4f4f;
   border-right: 1px solid #4f4f4f; 
 
+`;
+
+
+export const CalcLink = styled(Link)`
+    background: ${({ theme }) => theme.color.secondColor};
+    padding: 10px 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: 0.3s;
+
+    &:hover {
+        background: #149601;
+    }
+
+    &:active {
+        background: #16ad01;
+    }
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Content, Header, HeaderTitle, Image, TD, THead, TH, Table, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper, TBody, TablesWrapper, TableWrapper, Caption, Title } from './styledOffer';
+import { Content, Header, HeaderTitle, Image, TD, THead, TH, Table, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper, TBody, TablesWrapper, TableWrapper, Caption, Title, CalcLink } from './styledOffer';
 import AnimatedTile from './AnimatedTile';
 import seedling from './sadzonka.png';
 import tree from './tree.png';
@@ -36,8 +36,8 @@ export const Offer = () => {
                             </TileTextWrapper>
                         </Tile>
                     </AnimatedTile>
-                    <AnimatedTile>
 
+                    <AnimatedTile>
                         <Title>Cennik</Title>
                         <TablesWrapper>
                             <TableWrapper>
@@ -110,8 +110,8 @@ export const Offer = () => {
                                     </TBody>
                                 </Table>
                             </TableWrapper>
-
                         </TablesWrapper>
+                            <CalcLink to="/Kalkulator" >Zaplanuj swoją plantacje</CalcLink>
                     </AnimatedTile>
                 </TileWrapper>
             </Content>
