@@ -95,6 +95,10 @@ export const ButtonsWrapper = styled.div`
     display: flex;
     gap: 20px;
     justify-content: space-between;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        flex-direction: column;
+    };
 `;
 
 export const ClearButton = styled.button`
@@ -118,8 +122,14 @@ export const ClearButton = styled.button`
         transform: scale(1);
         cursor: no-drop;
     };
+    
 
     }
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        font-size: 16px;
+        padding: 10px 40px;
+    };
 `;
 
 export const CountButton = styled.button`
