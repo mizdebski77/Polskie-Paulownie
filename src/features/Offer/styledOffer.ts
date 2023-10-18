@@ -258,7 +258,7 @@ export const CalcLink = styled(Link)`
     text-decoration: none;
     font-size: 24px;
     transition: 0.3s;
-
+    margin: 0 auto;
     &:hover {
         background: #149601;
     }
@@ -271,4 +271,9 @@ export const CalcLink = styled(Link)`
         margin: 0 auto;
         font-size: 16px;
     };
+`;
+
+export const PriceWrapper = styled.div`
+    display: grid;
+    justify-content: center;
 `;

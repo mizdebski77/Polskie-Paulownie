@@ -1,5 +1,5 @@
 import React from 'react';
-import { Content, Header, HeaderTitle, Image, TD, THead, TH, Table, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper, TBody, TablesWrapper, TableWrapper, Caption, Title, CalcLink } from './styledOffer';
+import { Content, Header, HeaderTitle, Image, TD, THead, TH, Table, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper, TBody, TablesWrapper, TableWrapper, Caption, Title, CalcLink, PriceWrapper } from './styledOffer';
 import AnimatedTile from './AnimatedTile';
 import seedling from './sadzonka.png';
 import tree from './tree.png';
@@ -38,80 +38,82 @@ export const Offer = () => {
                     </AnimatedTile>
 
                     <AnimatedTile>
-                        <Title>Cennik</Title>
-                        <TablesWrapper>
-                            <TableWrapper>
-                                <Caption>Cena drzewa według wysokości</Caption>
-                                <Table>
-                                    <THead>
-                                        <tr>
-                                            <TH>Od</TH>
-                                            <TH>Do</TH>
-                                            <TH>Cena za sztukę</TH>
-                                        </tr>
-                                    </THead>
-                                    <TBody>
-                                        <tr>
-                                            <TD>50 cm</TD>
-                                            <TD>100 cm</TD>
-                                            <TD>70 zł</TD>
-                                        </tr>
-                                        <tr>
-                                            <TD>100 cm</TD>
-                                            <TD>150 cm</TD>
-                                            <TD>100 zł</TD>
-                                        </tr>
-                                        <tr>
-                                            <TD>150 cm</TD>
-                                            <TD>200 cm</TD>
-                                            <TD>150 zł</TD>
-                                        </tr>
-                                        <tr>
-                                            <TD>200 cm</TD>
-                                            <TD></TD>
-                                            <TD>cena indywidualna</TD>
-                                        </tr>
-                                    </TBody>
-                                </Table>
-                            </TableWrapper>
+                        <PriceWrapper>
+                            <Title>Cennik</Title>
+                            <TablesWrapper>
+                                <TableWrapper>
+                                    <Caption>Cena drzewa według wysokości</Caption>
+                                    <Table>
+                                        <THead>
+                                            <tr>
+                                                <TH>Od</TH>
+                                                <TH>Do</TH>
+                                                <TH>Cena za sztukę</TH>
+                                            </tr>
+                                        </THead>
+                                        <TBody>
+                                            <tr>
+                                                <TD>50 cm</TD>
+                                                <TD>100 cm</TD>
+                                                <TD>70 zł</TD>
+                                            </tr>
+                                            <tr>
+                                                <TD>100 cm</TD>
+                                                <TD>150 cm</TD>
+                                                <TD>100 zł</TD>
+                                            </tr>
+                                            <tr>
+                                                <TD>150 cm</TD>
+                                                <TD>200 cm</TD>
+                                                <TD>150 zł</TD>
+                                            </tr>
+                                            <tr>
+                                                <TD>200 cm</TD>
+                                                <TD></TD>
+                                                <TD>cena indywidualna</TD>
+                                            </tr>
+                                        </TBody>
+                                    </Table>
+                                </TableWrapper>
 
-                            <TableWrapper>
-                                <Caption>Cena sadzonki według ilości</Caption>
-                                <Table>
+                                <TableWrapper>
+                                    <Caption>Cena sadzonki według ilości</Caption>
+                                    <Table>
 
-                                    <THead>
-                                        <tr>
-                                            <TH>Od</TH>
-                                            <TH>Do</TH>
-                                            <TH>Cena za sztukę</TH>
-                                        </tr>
-                                    </THead>
-                                    <TBody>
-                                        <tr>
-                                            <TD>1</TD>
-                                            <TD>20</TD>
-                                            <TD>40 zł</TD>
-                                        </tr>
-                                        <tr>
-                                            <TD>21</TD>
-                                            <TD>100</TD>
-                                            <TD>35 zł</TD>
-                                        </tr>
-                                        <tr>
-                                            <TD>101</TD>
-                                            <TD>1000</TD>
-                                            <TD>30 zł</TD>
-                                        </tr>
-                                        <tr>
-                                            <TD>1001</TD>
-                                            <TD></TD>
-                                            <TD>cena indywidualna</TD>
-                                        </tr>
-                                    </TBody>
-                                </Table>
-                            </TableWrapper>
-                        </TablesWrapper>
-                        <CalcLink to="/Kalkulator" onClick={() => window.scrollTo(0, 0)} >Zaplanuj swoją plantacje</CalcLink>
+                                        <THead>
+                                            <tr>
+                                                <TH>Od</TH>
+                                                <TH>Do</TH>
+                                                <TH>Cena za sztukę</TH>
+                                            </tr>
+                                        </THead>
+                                        <TBody>
+                                            <tr>
+                                                <TD>1</TD>
+                                                <TD>20</TD>
+                                                <TD>40 zł</TD>
+                                            </tr>
+                                            <tr>
+                                                <TD>21</TD>
+                                                <TD>100</TD>
+                                                <TD>35 zł</TD>
+                                            </tr>
+                                            <tr>
+                                                <TD>101</TD>
+                                                <TD>1000</TD>
+                                                <TD>30 zł</TD>
+                                            </tr>
+                                            <tr>
+                                                <TD>1001</TD>
+                                                <TD></TD>
+                                                <TD>cena indywidualna</TD>
+                                            </tr>
+                                        </TBody>
+                                    </Table>
+                                </TableWrapper>
+                            </TablesWrapper>
+                            <CalcLink to="/Kalkulator" onClick={() => window.scrollTo(0, 0)} >Zaplanuj swoją plantacje</CalcLink>
+                        </PriceWrapper>
                     </AnimatedTile>
                 </TileWrapper>
             </Content>

@@ -2,6 +2,10 @@ import React from 'react';
 import { Content, Header, HeaderTitle, Image, MainText, Span, TextWrapper, Tile, TileText, TileTextWrapper, TileTitle, TileWrapper, Wrapper } from './styledCultivation';
 import ex from '../../common/Images/Example/bee.png';
 import AnimatedTile from './AnimatedTile';
+import planting from '../../common/Images/Cultivation/planting.png'
+import desks from '../../common/Images/Cultivation/desks.png'
+import pelets from '../../common/Images/Cultivation/pelets.png'
+import gardening from '../../common/Images/Cultivation/gardening.png'
 
 export const Cultivation = () => {
 
@@ -22,7 +26,7 @@ export const Cultivation = () => {
 
                     <AnimatedTile>
                         <Tile left>
-                            <Image src={ex} />
+                            <Image src={gardening} />
                             <TileTextWrapper>
                                 <TileTitle>
                                     Ogrodnictwo
@@ -42,19 +46,20 @@ export const Cultivation = () => {
                                 <TileText>
                                     Paulownie to szybko rosnące drzewa, które są coraz częściej sadzone ze względu na ich drewno użytkowe. Drewno paulowni jest lekkie i trwałe, co czyni je atrakcyjnym surowcem do produkcji mebli, podłóg i innych wyrobów stolarskich. Ponadto, paulownie są również cenne ze względu na swoje właściwości ekologiczne, ponieważ są efektywne w pochłanianiu dwutlenku węgla z atmosfery. To sprawia, że są one interesującym wyborem dla osób i firm zainteresowanych zrównoważonym gospodarowaniem lasami i produkcją drewna.                                </TileText>
                             </TileTextWrapper>
-                            <Image src={ex} />
+                            <Image src={desks} />
                         </Tile>
                     </AnimatedTile>
 
                     <AnimatedTile>
                         <Tile left>
-                            <Image src={ex} />
+                            <Image src={pelets} />
                             <TileTextWrapper>
                                 <TileTitle>
                                     Produkcja Biomasy
                                 </TileTitle>
                                 <TileText>
-                                    Paulownia jest jednym z najefektywniejszych gatunków drzew szybko rosnących, co sprawia, że jest idealna do uprawy w celu produkcji biomasy. Jej drewno jest wyjątkowo lekkie i ma wysoką wartość energetyczną. Drzewa Paulowni mogą być hodowane na plantacjach, a następnie przetwarzane na pellety, brykiety lub drewno opałowe, co przyczynia się do produkcji odnawialnej energii oraz biomasy wykorzystywanej w przemyśle. To zrównoważone źródło biopaliwa, które ma potencjał do zaspokajania rosnącego zapotrzebowania na energię. </TileText>
+                                    Paulownia jest jednym z najefektywniejszych gatunków drzew szybko rosnących, co sprawia, że jest idealna do uprawy w celu produkcji biomasy. Jej drewno jest wyjątkowo lekkie i ma stosunkowo wysoką wartość energetyczną. Drzewa Paulowni mogą być hodowane na plantacjach, a następnie przetwarzane na pellet, brykiety lub drewno opałowe, co przyczynia się do produkcji odnawialnej energii oraz biomasy wykorzystywanej w przemyśle. To zrównoważone źródło biopaliwa, które ma potencjał do zaspokajania rosnącego zapotrzebowania na energię.
+                                </TileText>
                             </TileTextWrapper>
                         </Tile>
                     </AnimatedTile>
@@ -68,7 +73,7 @@ export const Cultivation = () => {
                                 <TileText>
                                     Drzewa Paulowni stanowią doskonałą opcję dla rekultywacji terenów, które uległy degradacji na skutek wydobycia surowców naturalnych lub innych działalności przemysłowych. Ich szybki wzrost i zdolność do dostosowywania się do różnych warunków klimatycznych i glebowych sprawiają, że są idealnym wyborem. Korzenie Paulowni pomagają w stabilizacji gruntów i zapobiegają erozji. W wyniku tego procesu, tereny, które kiedyś były nieużyteczne, stają się przyjazne dla przyrody, co przyczynia się do odbudowy ekosystemów i przywracania naturalnej równowagi.                                </TileText>
                             </TileTextWrapper>
-                            <Image src={ex} />
+                            <Image src={planting} />
 
                         </Tile>
                     </AnimatedTile>
@@ -81,8 +86,7 @@ export const Cultivation = () => {
                                     Pszczelarstwo
                                 </TileTitle>
                                 <TileText>
-                                    Roślina należy do gatunku roślin C4 – miododajnych. Od końca kwietnia, przez 5 tygodni, kwitnie w koszykach kwiatowych o wysokości do 60 cm. Z końcem maja kwiaty schną i pojawiają się liście. Najbardziej znana jest jako paulownia puszysta, ale można ją spotkać także pod nazwą: cesarska lub omszona. Wieczorem, gdy pszczoły już nie pracują, słychać jeszcze gwar trzmieli, które zbierają spadź. Z racji, że liście są lepkie, nie spotykamy pod tymi drzewami mszyc, komarów, muszek – chyba boją się, że się przykleją.
-                                    W Moszczanicy obok Żywca wraz z uczniami klasy pszczelarskiej możemy obserwować cały rok jak pszczoły współpracują z paulowniami.
+                                    Roślina należy do gatunku roślin C4 – miododajnych. Od końca kwietnia, przez 5 tygodni, kwitnie w koszykach kwiatowych o wysokości do 60 cm. Z końcem maja kwiaty schną i pojawiają się liście. Najbardziej znana jest jako paulownia puszysta, ale można ją spotkać także pod nazwą: cesarska lub omszona. Wieczorem, gdy pszczoły już nie pracują, słychać jeszcze gwar trzmieli, które zbierają spadź. Z racji, że liście są lepkie, nie spotykamy pod tymi drzewami mszyc, komarów, muszek – chyba boją się, że się przykleją. W Moszczanicy obok Żywca wraz z uczniami klasy pszczelarskiej możemy obserwować cały rok jak pszczoły współpracują z paulownią.
                                 </TileText>
                             </TileTextWrapper>
                         </Tile>
