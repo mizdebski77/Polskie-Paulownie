@@ -19,7 +19,8 @@ export const Offer = () => {
                                 Sadzonki
                             </TileTitle>
                             <TileText>
-                                Nasza oferta zawiera sadzonki Paulowni, które są dostępne w różnych ilościach, idealne dla tych, którzy pragną wspierać rozwój polskiej produkcji drzew. Dostępne odmiany to Shang Tong i Tomentosa, które nie tylko zapewniają szybki wzrost, ale również są bardzie odporne na warunki atmosferyczne. To doskonały wybór dla tych, którzy kierują się troską o środowisko i marzą o dodaniu zieleni do swojego otoczenia. Nasze sadzonki to nie tylko inwestycja finansowa, ale także inwestycja w przyszłość - poprawa jakości powietrza wokół nas, co ma istotne znaczenie dla naszego środowiska. Zdecyduj się na zakup naszych sadzonek Paulowni, aby wesprzeć lokalną produkcję i cieszyć się korzyściami ekologicznymi, jakie przynosi ta piękna roślina.                                </TileText>
+                                Nasza oferta zawiera sadzonki Paulowni, które są dostępne w różnych ilościach, idealne dla tych, którzy pragną wspierać rozwój polskiej produkcji drzew. Dostępne odmiany to Shang Tong i Tomentosa, które nie tylko zapewniają szybki wzrost, ale również są bardziej odporne na warunki atmosferyczne. To doskonały wybór dla tych, którzy kierują się troską o środowisko i marzą o dodaniu zieleni do swojego otoczenia. Nasze sadzonki to nie tylko inwestycja finansowa, ale także inwestycja w przyszłość - poprawa jakości powietrza wokół nas, co ma istotne znaczenie dla naszego środowiska. Zdecyduj się na zakup naszych sadzonek Paulowni, aby wesprzeć lokalną produkcję i cieszyć się korzyściami ekologicznymi, jakie przynosi ta piękna roślina. Warto zaznaczyć, że sadzonki wysiewamy sami w polskich warunkach z nasion, które pochodzą z drzewa rosnącego w Polsce. Dzięki temu możemy zagwarantować, że nasze drzewa są odpowiednio przystosowane do lokalnego klimatu, co sprzyja ich zdrowemu wzrostowi i rozwojowi.
+                            </TileText>
                         </TileTextWrapper>
                         <Image src={seedling} />
                     </Tile>
@@ -32,7 +33,8 @@ export const Offer = () => {
                                     Drzewa
                                 </TileTitle>
                                 <TileText>
-                                    Nasze drzewa Paulowni są dostępne w różnych wysokościach od 1,5 m do 4,5 m i stanowią doskonałą inwestycję w przyszłość oraz ochronę środowiska. Odmiana Shang Tong jest łatwa w uprawie, a główną korzyścią płynącą z zakupu drzewa jest szybsze uzyskanie zysków w porównaniu do sadzonki. Nasza oferta to wyjątkowa okazja do zaangażowania się w dbanie o środowisko i wsparcie lokalnej produkcji. Wybierając drzewa Paulowni, podejmujesz decyzję na rzecz przyszłości i dobra naszej planety.                                </TileText>
+                                    Nasze drzewa Paulowni są dostępne w różnych wysokościach od 1,5 m do 4,5 m i stanowią doskonałą inwestycję w przyszłość oraz ochronę środowiska. Odmiana Shang Tong jest łatwa w uprawie, a główną korzyścią płynącą z zakupu drzewa jest szybsze uzyskanie zysków w porównaniu do sadzonki. Wybierając drzewa Paulowni, podejmujesz decyzję na rzecz przyszłości i dobra naszej planety. Warto dodać, że nasze drzewa są przez nas sadzone jako sadzonki, a następnie rosną w naszym klimacie przez okres dwóch lat. Ten proces pozwala nam zagwarantować, że drzewa są solidnie ukorzenione i przygotowane do szybkiego wzrostu, gdy zostaną przeniesione do ostatecznej lokalizacji.
+                                </TileText>
                             </TileTextWrapper>
                         </Tile>
                     </AnimatedTile>

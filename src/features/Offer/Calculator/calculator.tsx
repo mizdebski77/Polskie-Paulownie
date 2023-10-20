@@ -6,8 +6,8 @@ export const Calculator = () => {
 
     const [width, setWidth] = useState<string | number>('');
     const [length, setLength] = useState<string | number>('');
-    const [distance, setDistance] = useState<string | number>('');
-    const [spacingPlanting, setSpacingPlanting] = useState<string | number>('');
+    const [distance, setDistance] = useState<string | number>(5);
+    const [spacingPlanting, setSpacingPlanting] = useState<string | number>(3);
     const [result, setResult] = useState<number>(0);
 
     const count = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -38,7 +38,7 @@ export const Calculator = () => {
             <CalcSection>
                 <InputsWrapper>
                     <InputWrapper>
-                        <Caption>Szerokość działki (wymiar A) [m] *</Caption>
+                        <Caption>Szerokość działki (wymiar A) [m] </Caption>
                         <Input
                             type='number'
                             value={width}
@@ -49,7 +49,7 @@ export const Calculator = () => {
                         />
                     </InputWrapper>
                     <InputWrapper>
-                        <Caption>Długość działki (wymiar B) [m]*</Caption>
+                        <Caption>Długość działki (wymiar B) [m]</Caption>
                         <Input
                             type='number'
                             value={length}
@@ -59,7 +59,7 @@ export const Calculator = () => {
                         />
                     </InputWrapper>
                     <InputWrapper>
-                        <Caption>Odległość od granicy działki (wymiar C) [m] *</Caption>
+                        <Caption>Odległość od granicy działki (wymiar C) [m] </Caption>
                         <Input
                             type='number'
                             value={distance}
@@ -70,7 +70,7 @@ export const Calculator = () => {
                         />
                     </InputWrapper>
                     <InputWrapper>
-                        <Caption>Rozstaw sadzenia (wymiar D) [m]*</Caption>
+                        <Caption>Rozstaw sadzenia (wymiar D) [m]</Caption>
                         <Input
                             type='number'
                             value={spacingPlanting}

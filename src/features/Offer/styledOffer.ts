@@ -157,7 +157,7 @@ export const TileText = styled.article`
 `;
 
 export const Image = styled.img`
-    width: 240px;
+    width: 350px;
     margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
@@ -190,7 +190,7 @@ export const TablesWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 64px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         grid-template-columns: 1fr;
@@ -219,7 +219,6 @@ export const Table = styled.table`
   caption-side: bottom;
   font-size: 24px;
   border: 1px solid ${({ theme }) => theme.color.secondColor};
-
   @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         font-size: 16px;
         padding: 8px;
@@ -227,7 +226,8 @@ export const Table = styled.table`
 `;
 
 export const THead = styled.thead`
-  background-color: #ccc;
+  background-color: #0F7701;
+  color: white;
 `;
 
 export const TBody = styled.tbody`
@@ -236,7 +236,7 @@ export const TBody = styled.tbody`
 
 export const TH = styled.th`
   padding: 10px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #4f4f4f;
   border-right: 1px solid #4f4f4f; 
 
@@ -244,7 +244,7 @@ export const TH = styled.th`
 
 export const TD = styled.td`
   padding: 10px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #4f4f4f;
   border-right: 1px solid #4f4f4f; 
 
@@ -253,10 +253,10 @@ export const TD = styled.td`
 
 export const CalcLink = styled(Link)`
     background: ${({ theme }) => theme.color.secondColor};
-    padding: 10px 40px;
+    padding: 20px 100px;
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 32px;
     transition: 0.3s;
     margin: 0 auto;
     &:hover {

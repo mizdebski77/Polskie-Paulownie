@@ -24,7 +24,7 @@ export const Title = styled.h1`
 
 export const CalcSection = styled.main`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     align-items: center;
     gap: 20px;
 
@@ -35,12 +35,12 @@ export const CalcSection = styled.main`
 `;
 
 export const InputsWrapper = styled.form`
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
     display: grid;
     gap: 40px;
-    padding: 52px 40px;
+    padding: 64px 40px;
     box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 
@@ -168,7 +168,9 @@ export const Result = styled.span`
 `;
 
 export const Image = styled.img`
-    max-width: 600px;
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
     width: 100%;
     box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.25);
 `;
