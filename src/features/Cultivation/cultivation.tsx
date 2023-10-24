@@ -6,6 +6,10 @@ import planting from '../../common/Images/Cultivation/planting.png'
 import desks from '../../common/Images/Cultivation/desks.png'
 import pelets from '../../common/Images/Cultivation/pelets.png'
 import gardening from '../../common/Images/Cultivation/gardening.png'
+import science from '../../common/Images/Cultivation/science.png'
+import town from '../../common/Images/Cultivation/town.png'
+import city from '../../common/Images/Cultivation/city.png'
+import bee from '../../common/Images/Cultivation/bee.png'
 
 export const Cultivation = () => {
 
@@ -80,7 +84,7 @@ export const Cultivation = () => {
 
                     <AnimatedTile>
                         <Tile left>
-                            <Image src={ex} />
+                            <Image src={bee} />
                             <TileTextWrapper>
                                 <TileTitle>
                                     Pszczelarstwo
@@ -101,13 +105,13 @@ export const Cultivation = () => {
                                 <TileText>
                                     Paulownia jest doskonałym dodatkiem do miejskich krajobrazów, który przynosi nie tylko estetyczne korzyści, ale także wpływa na jakość powietrza w obszarach miejskich. Jej piękne, fioletowe kwiaty i dekoracyjne liście czynią ją atrakcyjnym drzewem dla miejskich ogrodów i parków. Ponadto, drzewa te przyczyniają się do oczyszczania powietrza z zanieczyszczeń i dostarczają cennego cienia w cieplejszych miesiącach.     </TileText>
                             </TileTextWrapper>
-                            <Image src={ex} />
+                            <Image src={city} />
                         </Tile>
                     </AnimatedTile>
 
                     <AnimatedTile>
                         <Tile left>
-                            <Image src={ex} />
+                            <Image src={town} />
                             <TileTextWrapper>
                                 <TileTitle>
                                     Hodowla Zwierząt
@@ -127,7 +131,7 @@ export const Cultivation = () => {
                                 <TileText>
                                     Paulownia jest przedmiotem licznych badań naukowych związanym z jej uprawą, właściwościami drewna i wpływem na środowisko. Badacze interesują się szczególnie potencjałem tych drzew do sekwestroacji dwutlenku węgla, produkcji biomasy, oraz jako źródła biomasy dla celów energetycznych i przemysłowych. Dzięki swojemu szybkiemu wzrostowi i wszechstronności, Paulownia przyciąga uwagę naukowców dążących do zrównoważonego rozwoju.  </TileText>
                             </TileTextWrapper>
-                            <Image src={ex} />
+                            <Image src={science} />
                         </Tile>
                     </AnimatedTile>
 
