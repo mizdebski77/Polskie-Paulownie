@@ -27,7 +27,7 @@ export const Offer = () => {
                     <AnimatedTile>
 
                         <Tile left>
-                            <Image src={tree} />
+                            <Image treeSize src={tree} />
                             <TileTextWrapper>
                                 <TileTitle>
                                     Drzewa
@@ -79,7 +79,7 @@ export const Offer = () => {
                                 </TableWrapper>
 
                                 <TableWrapper>
-                                    <Caption>Cena sadzonki według ilości</Caption>
+                                    <Caption>Cena sadzonki według liczby</Caption>
                                     <Table>
 
                                         <THead>

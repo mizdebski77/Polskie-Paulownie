@@ -1,25 +1,57 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Button, ContactWrapper, Form, Input, InputWrapper, Inputs, Link, LinkContainer, LinksTitle, LinksWrapper, SVGIcon, Span, TextArea, TextField, Title, Wrapper } from './styledContact';
 import facebook from '../../common/Images/SVG/facebook.svg';
 import mail from '../../common/Images/SVG/mail.svg';
 import phone from '../../common/Images/SVG/phone.svg';
 import adress from '../../common/Images/SVG/location.svg';
+import { message } from 'antd';
+import emailjs from '@emailjs/browser';
 
 
 export const Contact = () => {
+
+    const handleSendEmailSuccess = () => {
+        message.success('E-mail was sent!');
+    };
+
+    const handleSendEmailError = () => {
+        message.error('Email has not been sent. Try again!');
+    };
+
+    const form = useRef<HTMLFormElement>(null);
+
+    const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const formElement = event.target as HTMLFormElement;
+
+        emailjs.sendForm('service_154k192', 'template_kxd3htt', formElement, 'NBviFIQJGm59n')
+
+            .then((result) => {
+                if (result.text === "OK") {
+                    formElement.reset();
+                    handleSendEmailSuccess();
+                }
+            })
+            .catch(() => {
+                handleSendEmailError();
+            });
+    };
     return (
         <Wrapper>
             <Title>Masz pytanie?</Title>
             <Span>Skontaktuj się z nami wypełniając formularz lub klikając w link</Span>
 
             <ContactWrapper>
-                <Form>
+                <Form
+                    onSubmit={sendEmail}
+                    ref={form}
+                >
                     <InputWrapper>
                         <Inputs>
                             <Input type='name' name="name" placeholder='Imię i nazwisko *' required />
                             <Input type='email' name="email" placeholder='E-Mail' required />
                         </Inputs>
-                        <Input type='name' name="number" placeholder='Temat' />
+                        <Input type='name' name="topic" placeholder='Temat' />
                     </InputWrapper>
                     <TextArea placeholder='Wiadomość' name='message' required ></TextArea>
                     <Button>Wyślij</Button>

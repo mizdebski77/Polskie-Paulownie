@@ -131,7 +131,7 @@ export const Cultivation = () => {
                                 <TileText>
                                     Paulownia jest przedmiotem licznych badań naukowych związanym z jej uprawą, właściwościami drewna i wpływem na środowisko. Badacze interesują się szczególnie potencjałem tych drzew do sekwestroacji dwutlenku węgla, produkcji biomasy, oraz jako źródła biomasy dla celów energetycznych i przemysłowych. Dzięki swojemu szybkiemu wzrostowi i wszechstronności, Paulownia przyciąga uwagę naukowców dążących do zrównoważonego rozwoju.  </TileText>
                             </TileTextWrapper>
-                            <Image src={science} />
+                            <Image examination src={science} />
                         </Tile>
                     </AnimatedTile>
 

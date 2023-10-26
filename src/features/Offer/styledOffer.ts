@@ -156,13 +156,17 @@ export const TileText = styled.article`
     };
 `;
 
-export const Image = styled.img`
+export const Image = styled.img<{ treeSize?: boolean }>`
     width: 350px;
     margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         width: 120px;
     };
+
+    ${({ treeSize }) => treeSize && css`
+        width: 450px;
+    `};
 `;
 
 export const AnimatedTileWrapper = styled.div`

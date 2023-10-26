@@ -156,25 +156,31 @@ export const TileText = styled.article`
     };
 `;
 
-export const Image = styled.img`
-    width: 240px;
+export const Image = styled.img<{ examination?: boolean }>`
+    width: 350px;
     margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         width: 120px;
     };
+
+    ${({ examination }) => examination && css`
+        max-width: 240px;
+    `};
+
+
 `;
 
 export const AnimatedTileWrapper = styled.div`
-    opacity: 0;
-    transform: translateX(30%);
-    transition: opacity 1s, transform 1s;
+opacity: 0;
+transform: translateX(30 %);
+transition: opacity 1s, transform 1s;
     &.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    opacity: 1;
+    transform: translateY(0);
+}
 
-    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        transform: translateY(10%);
-    };
+@media(max - width: ${({ theme }) => theme.breakPoint.mobileMax}px) {
+    transform: translateY(10 %);
+};
 `;
