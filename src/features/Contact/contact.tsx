@@ -24,8 +24,7 @@ export const Contact = () => {
         event.preventDefault();
         const formElement = event.target as HTMLFormElement;
 
-        emailjs.sendForm('service_154k192', 'template_kxd3htt', formElement, 'NBviFIQJGm59n')
-
+        emailjs.sendForm('service_154k192', 'template_kxd3htt', formElement, 'auXX8OsH7phzvSsSf')
             .then((result) => {
                 if (result.text === "OK") {
                     formElement.reset();
@@ -36,6 +35,7 @@ export const Contact = () => {
                 handleSendEmailError();
             });
     };
+
     return (
         <Wrapper>
             <Title>Masz pytanie?</Title>
@@ -48,7 +48,7 @@ export const Contact = () => {
                 >
                     <InputWrapper>
                         <Inputs>
-                            <Input type='name' name="name" placeholder='Imię i nazwisko *' required />
+                            <Input type='name' name="name" placeholder='Imię i nazwisko' required />
                             <Input type='email' name="email" placeholder='E-Mail' required />
                         </Inputs>
                         <Input type='name' name="topic" placeholder='Temat' />

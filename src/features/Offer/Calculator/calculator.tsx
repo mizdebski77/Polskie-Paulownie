@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CountButton, CalcSection, Caption, Image, Input, InputWrapper, InputsWrapper, Result, ResultWrapper, Title, Wrapper, ButtonsWrapper, ClearButton } from './styledCalculator';
-import img from './img.jpg'
+import img from './graphic.png'
 
 export const Calculator = () => {
 
