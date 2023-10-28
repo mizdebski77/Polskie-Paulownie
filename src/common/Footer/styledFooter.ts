@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Wrapper = styled.footer`
@@ -13,14 +13,13 @@ export const Wrapper = styled.footer`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         display: grid;
-        gap: 40px;
+        gap: 56px;
         padding: 10px;
         justify-content: center;
         min-height: 480px;
     };
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        gap: 40px;
         padding: 40px 10px;
         min-height: 440px;
     };
