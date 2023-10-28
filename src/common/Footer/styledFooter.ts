@@ -21,7 +21,7 @@ export const Wrapper = styled.footer`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         gap: 40px;
-        padding: 40px;
+        padding: 40px 10px;
         min-height: 440px;
     };
 `;

@@ -5,6 +5,10 @@ export const Wrapper = styled.section`
     max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
+        padding: 10px;
+    };
 `;
 
 export const Title = styled.h1`
@@ -71,7 +75,7 @@ export const Caption = styled.span`
     color: ${({ theme }) => theme.color.secondColor};
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 20px;
+        font-size: 16px;
     };
 `;
 
@@ -158,7 +162,7 @@ export const ResultWrapper = styled.div`
     font-size: 32px;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        font-size: 24px;
+        font-size: 20px;
     };
 `;
 

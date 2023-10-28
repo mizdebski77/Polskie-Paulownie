@@ -112,7 +112,8 @@ export const Tile = styled.div <{ left?: boolean }>`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         display:flex;
-        flex-direction:column-reverse
+        flex-direction:column-reverse;
+        padding: 20px 10px;
     };
 
     ${({ left }) => left && css`
@@ -161,11 +162,15 @@ export const Image = styled.img<{ examination?: boolean }>`
     margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        width: 120px;
+        width: 160px;
     };
 
     ${({ examination }) => examination && css`
         max-width: 240px;
+
+    @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+        width: 120px;
+    };
     `};
 
 

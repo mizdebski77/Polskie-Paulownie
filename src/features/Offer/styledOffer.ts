@@ -161,11 +161,15 @@ export const Image = styled.img<{ treeSize?: boolean }>`
     margin: 0 auto;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
-        width: 120px;
+        width: 160px;
     };
 
     ${({ treeSize }) => treeSize && css`
         width: 450px;
+
+        @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+            width: 200px;
+        };
     `};
 `;
 
@@ -188,6 +192,11 @@ export const Title = styled.h3`
         font-size: 52px;
         margin: 10px 0px 40px;
         color: ${({ theme }) => theme.color.secondColor};
+
+        @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+            font-size: 36px;
+            margin: 10px 0px 20px;
+        };
 `;
 
 export const TablesWrapper = styled.div`
@@ -198,6 +207,7 @@ export const TablesWrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakPoint.secondBreakPoint}px){
         grid-template-columns: 1fr;
+        margin-bottom: 32px;
     };
 `;
 
@@ -274,6 +284,7 @@ export const CalcLink = styled(Link)`
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         margin: 0 auto;
         font-size: 16px;
+        padding: 10px 50px;
     };
 `;
 
