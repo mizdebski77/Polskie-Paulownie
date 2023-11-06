@@ -150,10 +150,11 @@ export const TileTitle = styled.h2`
 
 export const TileText = styled.article`
     font-size: 24px;
+    text-align: justify;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 16px;
-        text-align: center;
+
     };
 `;
 

@@ -53,6 +53,7 @@ export const ServicesText = styled.h3`
     margin: 10px;
     font-weight: normal;
     line-height: 1.2; 
+    text-align: justify;
     
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 16px;

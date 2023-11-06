@@ -87,10 +87,11 @@ export const AboutText = styled.article`
     font-size: 24px;
     animation: ${slideBottom} 1s;
     text-indent: 30px;
+    text-align: justify;
 
     @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
         font-size: 16px;
-        text-align: center;
+
     };
 `;
 
