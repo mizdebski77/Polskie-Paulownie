@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.872048d2.css",
-    "main.js": "/static/js/main.dfe545f2.js",
+    "main.js": "/static/js/main.b3067c6f.js",
     "static/js/787.70f169b2.chunk.js": "/static/js/787.70f169b2.chunk.js",
     "static/media/ROLKA_15.png": "/static/media/ROLKA_15.22fbbdb7bdb788d56b31.png",
     "static/media/GALERIA_029.jpg": "/static/media/GALERIA_029.97f2d246dd6dd545c080.jpg",
@@ -74,11 +74,11 @@
     "static/media/location.svg": "/static/media/location.09386c4789b6ba75131f490197a87a7a.svg",
     "static/media/phone.svg": "/static/media/phone.9bab0b2e984089b132868868d1ee64fd.svg",
     "main.872048d2.css.map": "/static/css/main.872048d2.css.map",
-    "main.dfe545f2.js.map": "/static/js/main.dfe545f2.js.map",
+    "main.b3067c6f.js.map": "/static/js/main.b3067c6f.js.map",
     "787.70f169b2.chunk.js.map": "/static/js/787.70f169b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.872048d2.css",
-    "static/js/main.dfe545f2.js"
+    "static/js/main.b3067c6f.js"
   ]
 }
