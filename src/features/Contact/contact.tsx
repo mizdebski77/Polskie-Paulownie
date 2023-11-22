@@ -70,7 +70,7 @@ export const Contact = () => {
                         </TextField>
                         <TextField>
                             <SVGIcon src={mail} />
-                            <Link href="mailto: polskie.paulownie@gmail.com" >polskiepaulowni@gmail.com</Link>
+                            <Link href="mailto: polskie.paulownie@gmail.com" >polskie.paulownie@gmail.com</Link>
                         </TextField>
                         <TextField>
                             <SVGIcon src={adress} />

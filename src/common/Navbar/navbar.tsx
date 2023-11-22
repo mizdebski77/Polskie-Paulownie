@@ -52,7 +52,6 @@ export const Navbar = () => {
             </Wrapper>
 
             <AnimatePresence>
-                {phoneNavbar && (
                     <PhoneNavbarWrapper
                         as={motion.div}
                         initial="hidden"
@@ -75,7 +74,6 @@ export const Navbar = () => {
                             ))}
                         </PhoneLinksWrapper>
                     </PhoneNavbarWrapper>
-                )}
             </AnimatePresence>
         </>
     );
